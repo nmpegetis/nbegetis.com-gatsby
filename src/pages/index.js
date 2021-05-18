@@ -40,21 +40,55 @@ export default ({ data }) => {
             <span className="first-name">{firstName}</span>&nbsp;
             <span className="last-name">{lastName}</span>
           </h1>
+          <h3>Me in eight seconds</h3>
           <p>
             <i>
               Hi! Welcome to my webpage! I am a 31 years old {occupation} from
-              Greece and Cyprus who lives in Switzerland since September 2019. I
-              decided to start this page and this blog in May 2021, as this task
-              had been in my todo list since y. You can find more about who I am
-              by visiting the About Me page.
-              {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
+              <strong>
+                <span className="blue"> Greece</span>
+              </strong>{" "}
+              and
+              <strong>
+                <span className="yellow"> Cyprus</span>
+              </strong>{" "}
+              who lives in
+              <strong>
+                <span className="red"> Switzerland </span>
+              </strong>
+              since September 2019. I am an explorer and I love any activity
+              that needs a compass in all four seasons. In the summer I enjoy -
+              <strong>
+                <span className="light-blue"> sailing</span>
+              </strong>
+              , in autumn -
+              <strong>
+                <span className="light-yellow"> hiking</span>
+              </strong>
+              , in winter -
+              <strong>
+                <span className="white"> skiing</span>
+              </strong>
+              , and in spring -
+              <strong>
+                <span className="green"> cycling</span>
+              </strong>
+              .
+            </i>
+          </p>
+          <p>
+            <i>
+              I decided to start this page and this blog in May 2021, as this
+              task had been in my todo list since 2013 😂. You can read more
+              about me (in eight minutes) by visiting the About page. You can
+              also check out what I'm doing now and what's happened to me so
+              far.
             </i>
           </p>
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
           <a
-            href="https://www.github.com"
+            href="https://github.com/nmpegetis/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -65,7 +99,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/nmpegetis/"
             target="_blank"
             rel="noopener noreferrer"
           >
