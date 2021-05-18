@@ -11,7 +11,7 @@ export default () => {
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
         <FontAwesomeIcon
-          icon={"caravan"}
+          icon={"compass"}
           className={`brand-icon ${dark ? "dark" : "light"}`}
           title="Home"
         />
@@ -24,6 +24,9 @@ export default () => {
         <Nav className="pr-3 mr-4 nav-links">
           <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
             Blog
+          </Nav.Link>
+          <Nav.Link className="ml-2" as={Link} to="/now" title="Now">
+            Now
           </Nav.Link>
           <Nav.Link className="ml-2" as={Link} to="/about" title="About">
             About
