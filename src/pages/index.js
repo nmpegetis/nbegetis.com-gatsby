@@ -17,8 +17,13 @@ export default ({ data }) => {
           width="150"
           height="150"
           fluid
-          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
-          alt={dark ? "Darth Vader" : "R2-D2"}
+          src={
+            dark
+              ? `../../icons/profile_dark.png`
+              : `../../icons/profile_light.png`
+          }
+          alt={dark ? "profile-dark" : "profile-light"}
+          roundedCircle
         />
         {unemployed && (
           <p className="mt-2">
@@ -37,7 +42,11 @@ export default ({ data }) => {
           </h1>
           <p>
             <i>
-              {occupation} by day,&nbsp;
+              Hi! Welcome to my webpage! I am a 31 years old {occupation} from
+              Greece and Cyprus who lives in Switzerland since September 2019. I
+              decided to start this page and this blog in May 2021, as this task
+              had been in my todo list since y. You can find more about who I am
+              by visiting the About Me page.
               {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
             </i>
           </p>
@@ -66,30 +75,33 @@ export default ({ data }) => {
               title="LinkedIn"
             />
           </a>
+          {unemployed && (
+              <a
+                href="https://www.freecodecamp.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "free-code-camp"]}
+                  className="icons fcc"
+                  title="FreeCodeCamp"
+                />
+              </a>
+            ) && (
+              <a
+                href="https://www.hackerrank.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "hackerrank"]}
+                  className="icons hr"
+                  title="Hackerrank"
+                />
+              </a>
+            )}
           <a
-            href="https://www.freecodecamp.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "free-code-camp"]}
-              className="icons fcc"
-              title="FreeCodeCamp"
-            />
-          </a>
-          <a
-            href="https://www.hackerrank.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "hackerrank"]}
-              className="icons hr"
-              title="Hackerrank"
-            />
-          </a>
-          <a
-            href="mailto:johndoe@gmail.com"
+            href="mailto:nmpegetis@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
