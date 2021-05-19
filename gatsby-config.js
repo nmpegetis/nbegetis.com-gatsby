@@ -18,6 +18,7 @@ module.exports = {
       `Begetis`,
       `Personal`,
       `Blog`,
+      `Now`,
       `Resume`,
       `CV`,
       `Projects`,
