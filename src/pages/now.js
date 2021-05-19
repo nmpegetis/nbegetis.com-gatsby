@@ -1,9 +1,8 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
-import { PageLayout, PageTitle, NowLink, BlogLink } from "../components"
+import { PageLayout, PageTitle, NowLink } from "../components"
 import { SEO, Utils } from "../utils"
 import { Container, Form, FormControl } from "react-bootstrap"
-import PostTemplate from "../templates/post-template"
 
 const SubTitle = ({ ttr, date, author }) => (
   <h5 className="text-muted mb-5">
@@ -64,7 +63,7 @@ export default ({ data }) => {
           </Container>
         </Container>
       )}
-      <PageTitle title="Past 'Now's" />
+      <PageTitle title="Past `Now`s" />
       <Container className="px-5 mb-5 text-center">
         <Form className="aurebesh blog-filter">
           <FormControl
@@ -81,7 +80,7 @@ export default ({ data }) => {
       >
         {filteredPosts.map(({ node }) => (
           <div key={node.id} className="p-3">
-            <BlogLink
+            <NowLink
               to={node.fields.slug}
               featuredImage={featuredImageMap[node.fields.slug]}
               title={node.frontmatter.title}
