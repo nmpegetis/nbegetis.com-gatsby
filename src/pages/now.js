@@ -3,6 +3,13 @@ import { graphql } from "gatsby"
 import { PageLayout, PageTitle, NowLink, BlogLink } from "../components"
 import { SEO, Utils } from "../utils"
 import { Container, Form, FormControl } from "react-bootstrap"
+import PostTemplate from "../templates/post-template"
+
+const SubTitle = ({ ttr, date, author }) => (
+  <h5 className="text-muted mb-5">
+    Time to read: {ttr} <small>min</small> | {date} | {author}
+  </h5>
+)
 
 export default ({ data }) => {
   const [state, setState] = useState({
@@ -45,6 +52,19 @@ export default ({ data }) => {
     <PageLayout>
       <SEO title="Now" />
       <PageTitle title="Now" />
+      {allPosts.length > 0 && (
+        <Container className="text-center" fluid>
+          <SubTitle
+            ttr={allPosts[0].node.timeToRead}
+            date={allPosts[0].node.frontmatter.date}
+            author={allPosts[0].node.frontmatter.author}
+          />
+          <Container className="text-justify">
+            <div dangerouslySetInnerHTML={{ __html: allPosts[0].node.html }} />
+          </Container>
+        </Container>
+      )}
+      <PageTitle title="Past 'Now's" />
       <Container className="px-5 mb-5 text-center">
         <Form className="aurebesh blog-filter">
           <FormControl
@@ -74,7 +94,8 @@ export default ({ data }) => {
     </PageLayout>
   )
 }
-
+//todo: if a past now is selected then make available the selected now in screen
+//todo: the below query needs optimization not to bring all the now texts but only the latest one
 export const query = graphql`
   query {
     allMarkdownRemark(
@@ -96,6 +117,8 @@ export const query = graphql`
             slug
           }
           excerpt
+          html
+          timeToRead
         }
       }
     }
