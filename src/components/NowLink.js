@@ -2,14 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 import { Container, Badge } from "react-bootstrap"
 
-export default ({ to, select, date, duration, excerpt, tags = [] }) => {
+export default ({ to, select, id, date, duration, excerpt, tags = [] }) => {
   return (
     <Container
       className="text-left"
       className="now-container now-links"
-      onClick={select}
+      onClick={select(id)}
     >
-      <Link>
+      <Link to={to}>
         <h4 className="mt-1">{`${date} | ⏱️ ${duration} min`}</h4>
         {/* </Link> */}
         {tags.map(tag => (

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { PageLayout, PageTitle, NowLink } from "../components"
-import { SEO, Utils } from "../utils"
+import { SEO } from "../utils"
 import { Container, Form, FormControl } from "react-bootstrap"
 
 const SubTitle = ({ ttr, date, author }) => (
@@ -14,12 +14,11 @@ export default ({ data }) => {
   const [state, setState] = useState({
     filteredData: [],
     query: "",
+    selectedPost: null,
   })
 
-  const allFeaturedImages = data.allFile.edges || []
   const allPosts = data.allMarkdownRemark.edges || []
   const regex = /\/[now].*\/|$/
-  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
 
   const handleChange = e => {
     const query = e.target.value
@@ -44,30 +43,23 @@ export default ({ data }) => {
     })
   }
 
-  const select = e => {
-    console.log("mpika")
-    // const query = e.target.value
-    // const filteredData = allPosts.filter(post => {
-    //   // query will run on the following fields
-    //   const { description, title, tags, author } = post.node.frontmatter
-    //   // standardize query
-    //   const stdQuery = query.toLowerCase()
-    //   return (
-    //     post.node.excerpt.toLowerCase().includes(stdQuery) ||
-    //     (description && description.toLowerCase().includes(stdQuery)) ||
-    //     title.toLowerCase().includes(stdQuery) ||
-    //     author.toLowerCase().includes(stdQuery) ||
-    //     (tags && tags.join("").toLowerCase().includes(stdQuery))
-    //   )
-    // })
-    // setState({
-    //   query,
-    //   filteredData,
-    // })
+  const select = id => e => {
+    console.log("mpika", id)
+    console.log(
+      "filteredPosts",
+      filteredPosts.filter(p => p.node.id === id)
+    )
+    const selected = filteredPosts.find(p => p.node.id === id)
+    console.log(selected)
+    setState({
+      query,
+      selectedPost: selected,
+    })
   }
 
-  const { filteredData, query } = state
+  const { filteredData, query, selectedPost } = state
   const filteredPosts = query !== "" ? filteredData : allPosts
+  const { node: nowRead } = selectedPost || filteredPosts[0]
 
   return (
     <PageLayout>
@@ -76,14 +68,12 @@ export default ({ data }) => {
       {filteredPosts.length > 0 && (
         <Container className="text-center" fluid>
           <SubTitle
-            ttr={filteredPosts[0].node.timeToRead}
-            date={filteredPosts[0].node.frontmatter.date}
-            author={filteredPosts[0].node.frontmatter.author}
+            ttr={nowRead.timeToRead}
+            date={nowRead.frontmatter.date}
+            author={nowRead.frontmatter.author}
           />
           <Container className="text-justify">
-            <div
-              dangerouslySetInnerHTML={{ __html: filteredPosts[0].node.html }}
-            />
+            <div dangerouslySetInnerHTML={{ __html: nowRead.html }} />
           </Container>
         </Container>
       )}
@@ -105,7 +95,8 @@ export default ({ data }) => {
         {filteredPosts.map(({ node }) => (
           <div key={node.id} className="p-3">
             <NowLink
-              to={node.fields.slug}
+              to={"/now/"}
+              id={node.id}
               title={node.frontmatter.title}
               date={node.frontmatter.date}
               duration={node.timeToRead}
