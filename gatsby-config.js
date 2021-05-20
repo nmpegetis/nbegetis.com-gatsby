@@ -25,7 +25,10 @@ module.exports = {
       `Work`,
     ],
     siteUrl:
-      process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
+      `https://nikolasbegetiscom.gatsbyjs.io/` ||
+      process.env.URL ||
+      process.env.DEPLOY_URL ||
+      `http://localhost:8000`,
     unemployed: false,
     designations: [
       `Coding Monkey`,
