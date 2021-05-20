@@ -14,7 +14,7 @@ $themes: (
     textColor: $black,
     firstName: orange,
     lastName: $black,
-    linkHover: $gray-800,
+    linkHover: orange,
     themeColor: orange,
     heartColor: pink,
     titleColor: orange,
@@ -33,7 +33,7 @@ $themes: (
     footerBackground: #222,
     secondary: $gray-100,
     navBackground: $dark-gray,
-    linkHover: $gray-200,
+    linkHover: $hover-blue,
     textColor: $gray-300,
     firstName: $gray-100,
     lastName: $dark-blue,//$empire-red,
@@ -103,6 +103,16 @@ $themes: (
 .nav-links a, .now-links a {
   @include themify($themes) {
     color: themed("linkHover") !important;
+    &:hover {
+      text-decoration: underline themed("hrefColor") solid;
+    }
+  }
+}
+
+.link {
+  @include themify($themes) {
+    color: themed("linkHover") !important;
+
     &:hover {
       text-decoration: underline themed("hrefColor") solid;
     }

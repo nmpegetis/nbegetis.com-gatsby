@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import ThemeContext from "../utils/theme"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
@@ -13,7 +13,7 @@ export default ({ data }) => {
     <PageLayout>
       <SEO title="Home" />
       <Container className="text-center pt-5 mt-5" fluid>
-        <Image
+        {/* <Image
           width="150"
           height="150"
           fluid
@@ -24,7 +24,7 @@ export default ({ data }) => {
           }
           alt={dark ? "profile-dark" : "profile-light"}
           roundedCircle
-        />
+        /> */}
         {unemployed && (
           <p className="mt-2">
             <b> Hey! I am looking for new opportunities :)</b>
@@ -40,7 +40,10 @@ export default ({ data }) => {
             <span className="first-name">{firstName}</span>&nbsp;
             <span className="last-name">{lastName}</span>
           </h1>
-          <h3>Me in eight seconds</h3>
+          <br />
+          <br />
+          <br />
+          <h3>Me in ten seconds</h3>
           <p>
             <i>
               Hi! Welcome to my webpage! I am a 31 years old {occupation} from
@@ -79,9 +82,18 @@ export default ({ data }) => {
             <i>
               I decided to start this page and this blog in May 2021, as this
               task had been in my todo list since 2013 😂. You can read more
-              about me (in eight minutes) by visiting the About page. You can
-              also check out what I'm doing now and what's happened to me so
-              far.
+              about me (in ten minutes) by visiting the{" "}
+              <Link to={"/about/"} className="link">
+                About
+              </Link>{" "}
+              page. You can also check out what I'm doing{" "}
+              <Link to={"/now/"} className="link">
+                now
+              </Link>{" "}
+              and what's happened to me{" "}
+              <Link to={"/now/"} className="link">
+                so far.
+              </Link>{" "}
             </i>
           </p>
         </Container>
@@ -135,7 +147,7 @@ export default ({ data }) => {
               </a>
             )}
           <a
-            href="mailto:nmpegetis@gmail.com"
+            href="mailto:begetis@protonmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >

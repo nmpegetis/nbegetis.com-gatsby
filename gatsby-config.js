@@ -9,8 +9,8 @@ module.exports = {
   siteMetadata: {
     title: `Nikolas Begetis`,
     author: `Nikolas Begetis`,
-    firstName: `Nikolas`,
-    lastName: `Begetis`,
+    firstName: `Nikólas`,
+    lastName: `Begétis`,
     description: `Nikolas Begetis's personal site`,
     occupation: `Software Engineer`,
     keywords: [
