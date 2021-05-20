@@ -5,6 +5,8 @@ import { Link, graphql } from "gatsby"
 import { ThemeContext, SEO } from "../utils"
 
 export default ({ data }) => {
+  const { dark } = useContext(ThemeContext)
+
   const MediaLink = ({ title, author, link }) => (
     <li key={title} style={{ color: "gray" }}>
       <a rel="noopener noreferrer" href={link}>
@@ -33,10 +35,14 @@ export default ({ data }) => {
       <PageTitle title="About Me" />
       <Container>
         <Image
-          rounded
+          roundedCircle
           width="140"
           height="140"
-          src={`../../icons/luke-${toString()}.png`}
+          src={
+            dark
+              ? `../../icons/profile_dark.png`
+              : `../../icons/profile_light.png`
+          }
           alt={author}
         />
         <article className="w-75 m-auto pt-2 text-justify">
