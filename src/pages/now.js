@@ -44,6 +44,28 @@ export default ({ data }) => {
     })
   }
 
+  const select = e => {
+    console.log("mpika")
+    // const query = e.target.value
+    // const filteredData = allPosts.filter(post => {
+    //   // query will run on the following fields
+    //   const { description, title, tags, author } = post.node.frontmatter
+    //   // standardize query
+    //   const stdQuery = query.toLowerCase()
+    //   return (
+    //     post.node.excerpt.toLowerCase().includes(stdQuery) ||
+    //     (description && description.toLowerCase().includes(stdQuery)) ||
+    //     title.toLowerCase().includes(stdQuery) ||
+    //     author.toLowerCase().includes(stdQuery) ||
+    //     (tags && tags.join("").toLowerCase().includes(stdQuery))
+    //   )
+    // })
+    // setState({
+    //   query,
+    //   filteredData,
+    // })
+  }
+
   const { filteredData, query } = state
   const filteredPosts = query !== "" ? filteredData : allPosts
 
@@ -51,15 +73,17 @@ export default ({ data }) => {
     <PageLayout>
       <SEO title="Now" />
       <PageTitle title="Now" />
-      {allPosts.length > 0 && (
+      {filteredPosts.length > 0 && (
         <Container className="text-center" fluid>
           <SubTitle
-            ttr={allPosts[0].node.timeToRead}
-            date={allPosts[0].node.frontmatter.date}
-            author={allPosts[0].node.frontmatter.author}
+            ttr={filteredPosts[0].node.timeToRead}
+            date={filteredPosts[0].node.frontmatter.date}
+            author={filteredPosts[0].node.frontmatter.author}
           />
           <Container className="text-justify">
-            <div dangerouslySetInnerHTML={{ __html: allPosts[0].node.html }} />
+            <div
+              dangerouslySetInnerHTML={{ __html: filteredPosts[0].node.html }}
+            />
           </Container>
         </Container>
       )}
@@ -82,11 +106,13 @@ export default ({ data }) => {
           <div key={node.id} className="p-3">
             <NowLink
               to={node.fields.slug}
-              featuredImage={featuredImageMap[node.fields.slug]}
               title={node.frontmatter.title}
-              subtitle={node.frontmatter.date}
+              date={node.frontmatter.date}
+              duration={node.timeToRead}
               excerpt={node.excerpt}
+              select={select}
             />
+            <hr />
           </div>
         ))}
       </Container>

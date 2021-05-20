@@ -100,7 +100,7 @@ $themes: (
   }
 }
 
-.nav-links a {
+.nav-links a, .now-links a {
   @include themify($themes) {
     color: themed("linkHover") !important;
     &:hover {
@@ -124,6 +124,15 @@ $themes: (
 .watch-list-title {
   @include themify($themes) {
     color: themed("secondary");
+  }
+}
+
+.now-container {
+  @include themify($themes) {
+    text-decoration-color: themed("hrefColor");
+    & h4 {
+      background: themed("cardBackground");
+    }
   }
 }
 
