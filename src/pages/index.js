@@ -48,18 +48,18 @@ export default ({ data }) => {
             <i>
               Hi! Welcome to my webpage! I am a 31 years old {occupation} from
               <strong>
-                <span className="blue"> Greece</span>
+                <span className="blue"> Greece🇬🇷</span>
               </strong>{" "}
               and
               <strong>
-                <span className="yellow"> Cyprus</span>
+                <span className="yellow"> Cyprus🇨🇾</span>
               </strong>{" "}
               who lives in
               <strong>
-                <span className="red"> Switzerland </span>
+                <span className="red"> Switzerland🇨🇭 </span>
               </strong>
               since September 2019. I am an explorer and I love any activity
-              that needs a compass in all four seasons. In the summer I enjoy -
+              that needs a 🧭 in all four 🌴🍁🌲🌷. In the summer I enjoy -
               <strong>
                 <span className="light-blue"> sailing</span>
               </strong>
@@ -80,9 +80,9 @@ export default ({ data }) => {
           </p>
           <p>
             <i>
-              I decided to start this page and this blog in May 2021, as this
-              task had been in my todo list since 2013 😂. You can read more
-              about me (in ten minutes) by visiting the{" "}
+              I decided to start this page/blog in May 2021, as this task had
+              been in my todo list since 2013 😂. You can read more about me (in
+              ten minutes) by visiting the{" "}
               <Link to={"/about/"} className="link">
                 About
               </Link>{" "}
