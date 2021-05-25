@@ -215,8 +215,11 @@ div {
   }
 }
 
-p {
+p, ol, ul {
   @include themify($themes) {
     color: themed("textColor");
+    & a {
+      color: themed("hrefColor");
+    }
   }
 }
