@@ -13,8 +13,8 @@ import { Howl } from "howler"
 // })
 
 const defaultState = {
-  dark: false,
-  toString: () => `light`,
+  dark: true,
+  toString: () => `dark`,
   toggleDark: () => {},
 }
 
@@ -22,7 +22,7 @@ const ThemeContext = React.createContext(defaultState)
 
 class ThemeProvider extends Component {
   state = {
-    dark: false,
+    dark: true,
   }
 
   toString = () => (this.state.dark ? `dark` : `light`)
