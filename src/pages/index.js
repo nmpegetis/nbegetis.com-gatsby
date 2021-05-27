@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import { graphql, Link } from "gatsby"
 import ThemeContext from "../utils/theme"
-import { PageLayout } from "../components"
+import { PageLayout, PageTitle } from "../components"
 import { SEO } from "../utils"
 import { Container, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -35,10 +35,13 @@ export default ({ data }) => {
             style={{
               fontSize: "5rem",
               color: "black",
+              display: "inline-flex",
+              flexFlow: "wrap",
+              justifyContent: "center",
             }}
           >
-            <span className="first-name">{firstName}</span>&nbsp;
-            <span className="last-name">{lastName}</span>
+            <div className="first-name">{firstName}</div>
+            <div className="last-name">{lastName}</div>
           </h1>
           <br />
           <br />

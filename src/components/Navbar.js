@@ -9,7 +9,7 @@ export default () => {
   const { dark, toggleDark, toString } = useContext(ThemeContext)
   return (
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
-      <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
+      <Navbar.Brand className="pl-2 ml-2" as={Link} to="/">
         <FontAwesomeIcon
           icon={"compass"}
           className={`brand-icon ${dark ? "dark" : "light"}`}

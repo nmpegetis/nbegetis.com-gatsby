@@ -83,6 +83,7 @@ $themes: (
 .first-name {
   @include themify($themes) {
     color: themed("firstName");
+    padding-right: 1rem;
   }
 }
 

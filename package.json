@@ -2,7 +2,7 @@
   "name": "nikolas-begetis-webpage",
   "private": true,
   "description": "A personal site built on the bare-bones starter for Gatsby",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

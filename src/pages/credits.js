@@ -14,8 +14,13 @@ export default () => {
         <p>
           Todo tasks for this personal page:
           <ul>
+            <li>
+              <s>Fix for mobile screens. Menu icon not shown. - 20210526</s>
+            </li>
             <li>Increase page font size</li>
-            <li>Move to left the logo</li>
+            <li>
+              <s>Move to left the logo - 20210526</s>
+            </li>
             <li>Produce Blog content</li>
             <li>Add content in Projects</li>
             <li>Add content in Resume</li>
@@ -25,6 +30,7 @@ export default () => {
             </li>
             <li>Change wepbage language based on location</li>
             <li>Start by writing some blog posts and remove dummy blogposts</li>
+            <li>Add strava plugins or garmin to use within blog posts</li>
             <li>
               Add a drop down menu item functionality
               <ul>
