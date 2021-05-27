@@ -9,6 +9,13 @@ export default ({ children }) => (
     <Container fluid className="pt-5 mt-5 text-center min-vh-100">
       {children}
     </Container>
-    <Footer />
+    <Footer
+      showCredits={
+        children &&
+        children[0] &&
+        children[0].props &&
+        children[0].props.title === "Credits"
+      }
+    />
   </Container>
 )
