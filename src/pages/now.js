@@ -68,7 +68,7 @@ export default ({ data }) => {
       {filteredPosts.length > 0 && (
         <Container className="text-center" fluid>
           <SubTitle
-            ttr={nowRead.timeToRead}
+            ttr={nowRead.frontmatter.timeToRead}
             date={nowRead.frontmatter.date}
             author={nowRead.frontmatter.author}
           />
@@ -99,7 +99,7 @@ export default ({ data }) => {
               id={node.id}
               title={node.frontmatter.title}
               date={node.frontmatter.date}
-              duration={node.timeToRead}
+              duration={node.frontmatter.timeToRead}
               excerpt={node.excerpt}
               select={select}
             />
@@ -128,13 +128,13 @@ export const query = graphql`
             tags
             author
             date(formatString: "DD MMMM, YYYY")
+            timeToRead
           }
           fields {
             slug
           }
           excerpt
           html
-          timeToRead
         }
       }
     }

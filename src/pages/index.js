@@ -42,6 +42,21 @@ export default ({ data }) => {
           </h1>
           <br />
           <br />
+          <p>
+            <i>** Currently this web page is under development **</i>
+          </p>
+          <p>
+            <i>** So far work is done only in Now and About page **</i>
+          </p>
+          <p>
+            <i>
+              <Link to={"/credits/"} className="link">
+                ** Check which page features are coming next, and all the
+                licenses and credits **
+              </Link>{" "}
+            </i>
+          </p>
+          <br />
           <br />
           <h3>Me in ten seconds</h3>
           <p>
