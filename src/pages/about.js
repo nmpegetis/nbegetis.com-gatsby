@@ -72,14 +72,14 @@ export default ({ data }) => {
           </p>
 
           <p className="i-5 mt-4 pt-2">
-            People would describe me as an easy-going person, and I personally
-            think you’d definitely enjoy grabbing a beer or coffee with me. I
-            consider myself mostly as a resourceful and ingenious explorer and
-            planner with an entrepreneurial and innovative mindset. I like
-            planning my next destination and I always enjoy the journey to every
-            destination in life, even if unplanned conditions are met halfway.
-            So it is obvious why I like sailing as well as learning how to
-            respond to wind-direction changes.
+            People would describe me as an easy-going person, and I think you’d
+            definitely enjoy grabbing a beer or coffee with me. I consider
+            myself mostly as a resourceful and ingenious explorer with an
+            entrepreneurial and innovative mindset. I like planning my next
+            destination and I always enjoy the journey to every destination in
+            life, even if unplanned conditions are met halfway. So it is obvious
+            why I like sailing as well as learning how to respond to
+            wind-direction changes.
           </p>
 
           <p className="i-5 mt-4 pt-2">

@@ -18,6 +18,7 @@ export default () => {
               <s>Fix for mobile screens. Menu icon not shown. - 20210526</s>
             </li>
             <li>Increase page font size</li>
+            <li>Link 'so far' with an in-page href to "Past 'Now's"</li>
             <li>
               <s>Move to left the logo - 20210526</s>
             </li>

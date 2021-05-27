@@ -121,9 +121,11 @@ $themes: (
 }
 
 .footer {
+  margin-top: 5rem;
   @include themify($themes) {
     background: themed("backgroundColor");
   }
+  padding-bottom: 2rem;
 }
 
 .heart {

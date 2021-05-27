@@ -64,7 +64,7 @@ export default ({ data }) => {
           <h3>Me in ten seconds</h3>
           <p>
             <i>
-              Hi! Welcome to my webpage! I am a 31 years old {occupation} from
+              Hi! Welcome to my webpage! I am a {occupation} from
               <strong>
                 <span className="blue"> Greece🇬🇷</span>
               </strong>{" "}
@@ -74,22 +74,22 @@ export default ({ data }) => {
               </strong>{" "}
               who lives in
               <strong>
-                <span className="red"> Switzerland🇨🇭 </span>
+                <span className="red"> Switzerland🇨🇭</span>
               </strong>
-              since September 2019. I am an explorer and I love any activity
-              that needs a 🧭 in all four 🌴🍁🌲🌷. In the summer I enjoy -
+              . I am an explorer and I love any activity that needs a 🧭 in all
+              four 🌴🍁🌲🌷. In the summer I enjoy
               <strong>
                 <span className="light-blue"> sailing</span>
               </strong>
-              , in autumn -
+              , in autumn
               <strong>
                 <span className="light-yellow"> hiking</span>
               </strong>
-              , in winter -
+              , in winter
               <strong>
                 <span className="white"> skiing</span>
               </strong>
-              , and in spring -
+              , and in spring
               <strong>
                 <span className="green"> cycling</span>
               </strong>
