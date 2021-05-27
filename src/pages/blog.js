@@ -44,7 +44,7 @@ export default ({ data }) => {
   return (
     <PageLayout>
       <SEO title="Blog" />
-      <PageTitle title="My Blog" />
+      <PageTitle title="My Blog (dummy data, to be updated)" />
       <Container className="px-5 mb-5 text-center">
         <Form className="aurebesh blog-filter">
           <FormControl

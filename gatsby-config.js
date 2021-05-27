@@ -30,12 +30,7 @@ module.exports = {
       process.env.DEPLOY_URL ||
       `http://localhost:8000`,
     unemployed: false,
-    designations: [
-      `Coding Monkey`,
-      `Jedi Master`,
-      `Binary Sunset Enthusiast`,
-      `Moisture Farmer`,
-    ],
+    designations: [`Explorer`, `Navigator`, `Engineer`, `Thinker`],
     readingList: [
       {
         title: `Sapiens: A Brief History of Humankind`,
