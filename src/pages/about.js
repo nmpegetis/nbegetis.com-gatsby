@@ -28,6 +28,15 @@ export default ({ data }) => {
 
   const bookLinks = readingList.map(book => MediaLink(book))
   const showLinks = showsList.map(show => MediaLink(show))
+  const designationLimit = 3
+
+  const shuffleArray = array => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[array[i], array[j]] = [array[j], array[i]]
+    }
+    return array
+  }
 
   return (
     <PageLayout>
@@ -47,12 +56,16 @@ export default ({ data }) => {
         />
         <article className="w-75 m-auto pt-2 text-justify">
           <p className="text-center">
-            {designations.map((attr, i) => (
-              <span key={attr}>
-                &nbsp;<b>{attr}</b>&nbsp;
-                {i < designations.length - 1 && <>||</>}
-              </span>
-            ))}
+            Some of the designations I listen to are (refresh for more):
+            {shuffleArray(designations).map(
+              (attr, i) =>
+                i < designationLimit && (
+                  <span key={attr}>
+                    &nbsp;<b>{attr}</b>&nbsp;
+                    {i < designationLimit - 1 && <>||</>}
+                  </span>
+                )
+            )}
           </p>
           <p className="i-5 mt-4 pt-2">
             Hello there! My name is <b>{`${author}`}</b>.
