@@ -106,48 +106,31 @@ body {
 }
 
 .red {
-    color: $faded-red;
+  color: $faded-red;
 }
 
 .blue {
-    color: $dark-blue;
+  color: $dark-blue;
 }
 
 .light-blue {
-  color: cyan;
-  text-shadow: -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
-  }
-  
+  color: $dark-blue;
+}
+
 .yellow {
-    color: orange;
+  color: orange;
 }
 
 .light-yellow {
   color: $yellow;
-  text-shadow: -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
-  }
+}
 
 .green {
-  color: $green;
-  text-shadow: -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
-  
-  }
+  color: $green;  
+}
 
 .white {
-  color: $white;
-  text-shadow: -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
+  color: plum;
 }
 
 p {
