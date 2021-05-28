@@ -109,7 +109,7 @@ module.exports = {
         background_color: `#222`,
         theme_color: `#004f8f`,
         display: `standalone`,
-        icon: `${__dirname}/static/favicon.ico`, // This path is relative to the root of the site.
+        icon: `${__dirname}/static/faviconnorth.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,

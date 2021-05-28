@@ -13,8 +13,8 @@ import { Howl } from "howler"
 // })
 
 const defaultState = {
-  dark: false,
-  toString: () => `light`,
+  dark: true,
+  toString: () => `dark`,
   toggleDark: () => {},
 }
 
