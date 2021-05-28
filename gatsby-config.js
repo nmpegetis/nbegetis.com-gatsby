@@ -106,8 +106,8 @@ module.exports = {
         short_name: `N.Begetis`,
         description: `This is my personal site.`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#fff`,
+        background_color: `#222`,
+        theme_color: `#004f8f`,
         display: `standalone`,
         icon: `${__dirname}/static/favicon.ico`, // This path is relative to the root of the site.
       },
