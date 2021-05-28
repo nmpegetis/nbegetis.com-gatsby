@@ -76,9 +76,9 @@ export default ({ data }) => {
             definitely enjoy grabbing a beer or coffee with me. I consider
             myself mostly as a resourceful and ingenious explorer with an
             entrepreneurial and innovative mindset. I like planning my next
-            destination and I always enjoy the journey to every destination in
-            life, even if unplanned conditions are met halfway. So it is obvious
-            why I like sailing as well as learning how to respond to
+            destinations in life and I always enjoy that journey, even if there
+            may occur unexpected setbacks. Obviously, this is one reason why I
+            like sailing, and the process of learning how to respond to
             wind-direction changes.
           </p>
 
@@ -93,11 +93,11 @@ export default ({ data }) => {
           <p className="i-5 mt-4 pt-2">
             As a {occupation} I’ve been designing and writing code since my late
             teens (that period seems further and further away now!). So far,
-            I’ve avoided to put myself under one label — to specialise in one
+            I’ve avoided to put myself under one label — to specialize in one
             thing only — and instead gone for this Jack of all Trades role in
             the various teams I’ve had the pleasure of working with. But doing
             so for that long I gained a good experience as a generalist in
-            anything that has to do with data analysis, visualisations, business
+            anything that has to do with data analysis, visualizations, business
             intelligence, product, machine learning and deep learning. I
             specialize, though, in software development for the mobile-web, both
             in front and backend. In the latest years, I work as a Senior{" "}

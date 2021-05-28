@@ -76,8 +76,8 @@ export default ({ data }) => {
               <strong>
                 <span className="red"> Switzerland🇨🇭</span>
               </strong>
-              . I am an explorer and I love any activity that needs a 🧭 in all
-              four 🌴🍁🌲🌷. In the summer I enjoy
+              . I am an explorer and I love any activity, in all four 🌴🍁🌲🌷,
+              that needs a 🧭. In the summer I enjoy
               <strong>
                 <span className="light-blue"> sailing</span>
               </strong>
