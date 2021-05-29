@@ -15,9 +15,10 @@ export default ({ data }) => {
       title={post.frontmatter.title}
       subTitle={
         <SubTitle
-          ttr={post.timeToRead}
+          ttr={post.frontmatter.timeToRead}
           date={post.frontmatter.date}
           author={post.frontmatter.author}
+          tags={post.frontmatter.tags}
         />
       }
       excerpt={post.excerpt}
@@ -34,9 +35,10 @@ export const query = graphql`
         title
         author
         date(formatString: "DD MMMM, YYYY")
+        timeToRead
+        tags
       }
       excerpt
-      timeToRead
     }
   }
 `

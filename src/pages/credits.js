@@ -24,12 +24,17 @@ export default () => {
             <li>
               <s>Move to left the logo - 20210526</s>
             </li>
-            <li>Produce Blog content</li>
+            <li>
+              <s>Produce Blog content - 20210528</s>
+            </li>
+            <li>Add tags in blog post cards and pages</li>
+            <li>Make tags in whole web base clickable, and filterable</li>
+            <li>Add content in Projects</li>
             <li>Add content in Projects</li>
             <li>Add content in Resume</li>
             <li>
-              Serve books reading list etc. from graphql. Show top # books based
-              on my ratings
+              g Serve books reading list etc. from graphql. Show top # books
+              based on my ratings
             </li>
             <li>Change wepbage language based on location</li>
             <li>Start by writing some blog posts and remove dummy blogposts</li>

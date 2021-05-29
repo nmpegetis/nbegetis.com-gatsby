@@ -1,5 +1,5 @@
 export default {
-  getImageMap: (images, regex, hasMultipleImages = false, limit = 3) => {
+  getImageMap: (images, regex, hasMultipleImages = true, limit = 3) => {
     return images.reduce((map, image) => {
       const slug = image.node.relativePath.match(regex)[0]
       if (hasMultipleImages) {

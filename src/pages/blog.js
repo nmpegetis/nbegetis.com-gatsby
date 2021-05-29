@@ -14,7 +14,6 @@ export default ({ data }) => {
   const allPosts = data.allMarkdownRemark.edges || []
   const regex = /\/[blog].*\/|$/
   const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
-
   const handleChange = e => {
     const query = e.target.value
 
@@ -44,7 +43,7 @@ export default ({ data }) => {
   return (
     <PageLayout>
       <SEO title="Blog" />
-      <PageTitle title="My Blog (dummy data, to be updated)" />
+      <PageTitle title="My Blog" />
       <Container className="px-5 mb-5 text-center">
         <Form className="aurebesh blog-filter">
           <FormControl
@@ -67,6 +66,7 @@ export default ({ data }) => {
               title={node.frontmatter.title}
               subtitle={node.frontmatter.date}
               excerpt={node.excerpt}
+              tags={node.frontmatter.tags}
             />
           </div>
         ))}
@@ -91,6 +91,7 @@ export const query = graphql`
             tags
             author
             date(formatString: "DD MMMM, YYYY")
+            tags
           }
           fields {
             slug
@@ -102,7 +103,7 @@ export const query = graphql`
     allFile(
       filter: {
         extension: { eq: "jpg" }
-        relativePath: { regex: "/feature/" }
+        relativePath: { regex: "/(feature|blog)/" }
         relativeDirectory: { regex: "/content/blog/" }
       }
     ) {
