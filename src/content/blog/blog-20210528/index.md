@@ -7,9 +7,9 @@ date: "2021-05-28"
 timeToRead: "<1"
 ---
 
-This weekend was awesome! We had been with some close friends to [Ponto Valentino](https://en.wikipedia.org/wiki/Ponto_Valentino) as we had a long weekend due to the
-celebration of [Whit Monday](https://www.officeholidays.com/holidays/switzerland/zurich/whit-monday). 
+This weekend was awesome! We had been with some close friends to <a href="https://en.wikipedia.org/wiki/Ponto_Valentino" target="_blank">Ponto Valentino</a> as we had a long weekend due to the
+celebration of <a href="https://www.officeholidays.com/holidays/switzerland/zurich/whit-monday" target="_blank">Whit Monday</a>. 
 
-These 3 days we explored the Locarno region. We visited [Vale Verzasca](https://www.ascona-locarno.com/en/explore/valle-verzasca), [Locarno city](https://www.ascona-locarno.com/en/explore/locarno), and hiked 20km (1500m ascent) to conquer the top of [Gazzirola mountain (2.115m)](https://www.sac-cas.ch/de/huetten-und-touren/sac-tourenportal/gazzirola-6251/berg-und-alpinwandern/), which is one of the natural borders between Switzerland and Italy. After the hiking we treated ourselves with a local beverage in a coffehouse at the colourful [Isone (747 m)](https://www.isone.ch/index.html) village.
+These 3 days we explored the Locarno region. We visited <a href="https://www.ascona-locarno.com/en/explore/valle-verzasca" target="_blank">Vale Verzasca</a>, <a href="https://www.ascona-locarno.com/en/explore/locarno" target="_blank">Locarno city</a>, and hiked 20km (1500m ascent) to conquer the top of <a href="https://www.sac-cas.ch/de/huetten-und-touren/sac-tourenportal/gazzirola-6251/berg-und-alpinwandern/" target="_blank">Gazzirola mountain (2.115m)</a>, which is one of the natural borders between Switzerland and Italy. After the hiking we treated ourselves with a local beverage in a coffehouse at the colourful <a href="https://www.isone.ch/index.html" target="_blank">Isone (747 m)</a> village.
 
 I list above a photo from the trip.

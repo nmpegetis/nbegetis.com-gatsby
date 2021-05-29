@@ -49,7 +49,7 @@ export default ({ data }) => {
             <i>** Currently this web page is under development **</i>
           </p>
           <p>
-            <i>** So far work is done only in Now and About page **</i>
+            <i>** So far work is done only in Blog, Now and About page **</i>
           </p>
           <p>
             <i>
