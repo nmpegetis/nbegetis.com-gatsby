@@ -49,6 +49,9 @@ module.exports = {
       `Ingenious`,
       `Debater`,
       `Commander`,
+      `Captain`,
+      `Professor`,
+      `Coach`,
     ],
     readingList: [
       {
