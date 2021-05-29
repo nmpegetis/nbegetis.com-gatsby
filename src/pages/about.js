@@ -54,7 +54,7 @@ export default ({ data }) => {
           }
           alt={author}
         />
-        <article className="w-75 m-auto pt-2 text-justify">
+        <article className="w-175 m-auto pt-2 text-justify">
           <p className="text-center">
             Some of the designations I listen to are (refresh for more):
             {shuffleArray(designations).map(
@@ -97,7 +97,7 @@ export default ({ data }) => {
             thing only — and instead gone for this Jack of all Trades role in
             the various teams I’ve had the pleasure of working with. But doing
             so for that long I gained a good experience as a generalist in
-            anything that has to do with data analysis, visualizations, business
+            anything that has to do with data analysis, visualiations, business
             intelligence, product, machine learning and deep learning. I
             specialize, though, in software development for the mobile-web, both
             in front and backend. In the latest years, I work as a Senior{" "}

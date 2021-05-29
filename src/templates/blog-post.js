@@ -25,6 +25,7 @@ export default ({ data }) => {
             author={post.frontmatter.author}
             tags={post.frontmatter.tags}
           />
+          {/* TODO a clean up is needed here */}
           {/* <Img
             width="150"
             height="150"
