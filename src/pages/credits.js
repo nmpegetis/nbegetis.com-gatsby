@@ -29,6 +29,7 @@ export default () => {
             </li>
             <li>Add tags in blog post cards and pages</li>
             <li>Make tags in whole web base clickable, and filterable</li>
+            <li>Add plugin for photos preview</li>
             <li>Add content in Projects</li>
             <li>Add content in Projects</li>
             <li>Add content in Resume</li>

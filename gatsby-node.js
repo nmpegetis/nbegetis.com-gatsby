@@ -7,6 +7,7 @@ const getContentType = node =>
   node.fileAbsolutePath.match(/content(.*)/)[0].split(`/`)[1]
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
+  console.log(node)
   if (node.internal.type === "MarkdownRemark") {
     const contentType = getContentType(node)
     const path = `content/${contentType}/`
