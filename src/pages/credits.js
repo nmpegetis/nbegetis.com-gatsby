@@ -27,7 +27,6 @@ export default () => {
             <li>Make tags in whole web base clickable, and filterable</li>
             <li>Add plugin for photos preview</li>
             <li>Add tags in blog post cards and pages</li>
-            <li>Add Last Updated timestamp on every new commit</li>
             <li>Add content in Projects</li>
             <li>Add content in Resume</li>
             <li>
@@ -66,9 +65,12 @@ export default () => {
             reversed
           >
             <li>
-              <s>Produce Blog content - 20210528</s> -{" "}
-              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/37fed906194009e1f284d2b935c8cbef5e5b4ae6">
-                37fed90
+              <s>Add Last Updated timestamp on every new commit - 20210601</s> -{" "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/"
+                target="_blank"
+              >
+                latest
               </a>
             </li>
             <li>
@@ -77,25 +79,46 @@ export default () => {
                 20210531
               </s>{" "}
               -{" "}
-              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/7657b5e3a426dc12246a2d8c439ff0a601481d98">
-                7657b5e
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/f7eb68eaceb6e370067a13520bf0d97a3ba83ef5"
+                target="_blank"
+              >
+                f7eb68e
+              </a>
+            </li>
+            <li>
+              <s>Produce Blog content - 20210528</s> -{" "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/37fed906194009e1f284d2b935c8cbef5e5b4ae6"
+                target="_blank"
+              >
+                37fed90
               </a>
             </li>
             <li>
               <s>Increase page font size - 20210527</s> -{" "}
-              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/037809b2b72f13d5812e1eb69118b8619418f6ed">
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/037809b2b72f13d5812e1eb69118b8619418f6ed"
+                target="_blank"
+              >
                 037809b
               </a>
             </li>
             <li>
               <s>Fix for mobile screens. Menu icon not shown. - 20210526</s> -{" "}
-              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/7657b5e3a426dc12246a2d8c439ff0a601481d98">
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/7657b5e3a426dc12246a2d8c439ff0a601481d98"
+                target="_blank"
+              >
                 7657b5e
               </a>
             </li>
             <li>
               <s>Move to left the logo - 20210526</s> -{" "}
-              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/7657b5e3a426dc12246a2d8c439ff0a601481d98">
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/7657b5e3a426dc12246a2d8c439ff0a601481d98"
+                target="_blank"
+              >
                 7657b5e
               </a>
             </li>

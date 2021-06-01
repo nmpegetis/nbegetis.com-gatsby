@@ -3,12 +3,19 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 
 export default ({ showCredits }) => {
-  const { author } = useStaticQuery(query).site.siteMetadata
+  const {
+    site: {
+      siteMetadata: { author },
+    },
+    currentBuildDate: { currentDate },
+  } = useStaticQuery(query)
+
   return (
     <div className="footer text-muted text-center">
       <span className="m-auto">
         <Link to={"/credits/"} className="link">
-          <b>{author}</b> &copy; {new Date().getFullYear()}
+          <b>{author}</b> &copy; {new Date().getFullYear()}. Last updated on{" "}
+          {currentDate}
         </Link>
         {showCredits && (
           <span>
@@ -21,12 +28,16 @@ export default ({ showCredits }) => {
     </div>
   )
 }
+
 const query = graphql`
   query Author {
     site {
       siteMetadata {
         author
       }
+    }
+    currentBuildDate {
+      currentDate
     }
   }
 `

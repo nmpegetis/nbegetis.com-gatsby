@@ -131,5 +131,6 @@ module.exports = {
         showSpinner: true,
       },
     },
+    `gatsby-plugin-build-date`,
   ],
 }
