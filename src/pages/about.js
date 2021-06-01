@@ -47,11 +47,7 @@ export default ({ data }) => {
           roundedCircle
           width="140"
           height="140"
-          src={
-            dark
-              ? `../../icons/profile_dark.png`
-              : `../../icons/profile_light.png`
-          }
+          src={dark ? `../../icons/p.png` : `../../icons/p.png`}
           alt={author}
         />
         <article className="w-175 m-auto pt-2 text-justify">
