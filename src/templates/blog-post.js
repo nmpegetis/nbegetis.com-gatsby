@@ -36,10 +36,13 @@ export default ({ path, data }) => {
             // alt={true ? "profile-dark" : "profile-light"}
             // roundedCircle
           /> */}
+          {/* hot fix below, change this */}
           <Image
             width="550"
             fluid
-            src={photos[0].node.childImageSharp.fluid.src}
+            src={
+              photos && photos[0] && photos[0].node.childImageSharp.fluid.src
+            }
             alt={"profile-light"}
             rounded
             style={{ marginBottom: "20px" }}
