@@ -10,10 +10,11 @@ const SubTitle = ({ ttr, date, author }) => (
   </h5>
 )
 
-export default ({ data }) => {
+export default ({ path, data }) => {
   const post = data.markdownRemark
-  const photos = data.allFile.edges || []
-  console.log(photos[0].node.childImageSharp.fluid)
+  const photos = (data.allFile.edges || []).filter(el =>
+    el.node.relativePath.includes(path)
+  )
   return (
     <PostTemplate
       title={post.frontmatter.title}

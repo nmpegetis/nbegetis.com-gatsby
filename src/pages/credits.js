@@ -65,12 +65,25 @@ export default () => {
             reversed
           >
             <li>
-              <s>Add Last Updated timestamp on every new commit - 20210601</s> -{" "}
+              <s>
+                Fix image shown for each blog-post filtering only the ones
+                within directory - 20210607
+              </s>{" "}
+              -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/"
                 target="_blank"
               >
                 latest
+              </a>
+            </li>
+            <li>
+              <s>Add Last Updated timestamp on every new commit - 20210601</s> -{" "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/e5d6cda69e0c330e10d858c0886e394af15bb3da"
+                target="_blank"
+              >
+                e5d6cda
               </a>
             </li>
             <li>
