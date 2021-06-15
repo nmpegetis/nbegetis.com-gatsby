@@ -12,7 +12,7 @@ export default ({ data }) => {
   return (
     <PageLayout>
       <SEO title="Resume" />
-      <PageTitle title="Resume (dummy data, to be updated)">
+      <PageTitle title="Resume (**dummy data, to be updated**)">
         &nbsp;
         <a href="../../resume.pdf" target="_blank" download>
           <FontAwesomeIcon

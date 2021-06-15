@@ -1,9 +1,9 @@
 import React, { useContext } from "react"
 import { graphql, Link } from "gatsby"
 import ThemeContext from "../utils/theme"
-import { PageLayout, PageTitle } from "../components"
+import { PageLayout } from "../components"
 import { SEO } from "../utils"
-import { Container, Image } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default ({ data }) => {
@@ -13,18 +13,6 @@ export default ({ data }) => {
     <PageLayout>
       <SEO title="Home" />
       <Container className="text-center pt-5 mt-5" fluid>
-        {/* <Image
-          width="150"
-          height="150"
-          fluid
-          src={
-            dark
-              ? `../../icons/profile_dark.png`
-              : `../../icons/profile_light.png`
-          }
-          alt={dark ? "profile-dark" : "profile-light"}
-          roundedCircle
-        /> */}
         {unemployed && (
           <p className="mt-2">
             <b> Hey! I am looking for new opportunities :)</b>

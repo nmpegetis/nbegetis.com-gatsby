@@ -174,6 +174,7 @@ export default ({ data }) => {
             </>
           )}
           <p> </p>
+          {/* Todo: add below section when the list contents are ready */}
           {/* <hr />
           <h5 className="watch-list-title pt-4">
             Here are a couple of books from my reading list:

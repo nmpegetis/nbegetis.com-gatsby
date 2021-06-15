@@ -110,7 +110,6 @@ export default ({ data }) => {
     </PageLayout>
   )
 }
-//todo: if a past now is selected then make available the selected now in screen
 //todo: the below query needs optimization not to bring all the now texts but only the latest one
 export const query = graphql`
   query {

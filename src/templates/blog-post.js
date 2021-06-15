@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import PostTemplate from "./post-template"
 import { Image } from "react-bootstrap"
-import Img from "gatsby-image"
 
 const SubTitle = ({ ttr, date, author }) => (
   <h5 className="text-muted mb-5">
@@ -26,17 +25,7 @@ export default ({ path, data }) => {
             author={post.frontmatter.author}
             tags={post.frontmatter.tags}
           />
-          {/* TODO a clean up is needed here */}
-          {/* <Img
-            width="150"
-            height="150"
-            fluid={photos[0].node.childImageSharp.fluid}
-            className="m-auto w-75"
-            // src={photos[0].node.fluid}
-            // alt={true ? "profile-dark" : "profile-light"}
-            // roundedCircle
-          /> */}
-          {/* hot fix below, change this */}
+          {/* todo: hot fix below, change this in future */}
           <Image
             width="550"
             fluid
