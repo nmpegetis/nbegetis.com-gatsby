@@ -1,9 +1,9 @@
-See me [live!](https://gatsby-starter-portfolio.herokuapp.com/)
+See me [live!](https://nbegetis.com/)
 
 ## Usage
 
 `npm i -g gatsby-cli`\
-`gatsby new your-site-name https://github.com/surudhb/gatsby-personal-site-template.git`\
+`gatsby new your-site-name https://github.com/nmpegetis/nbegetis.com-gatsby.git`\
 `cd your-site-name && gatsby develop`
 
 ## 📋 Starter README
@@ -44,23 +44,14 @@ See me [live!](https://gatsby-starter-portfolio.herokuapp.com/)
 
 ### Credits
 
-- Star Wars icons: https://icons8.com/icons/
+- Starter template of surudhb: https://www.gatsbyjs.com/starters/surudhb/gatsby-personal-site-template
 - Using Context API with Gatsby: https://www.gatsbyjs.org/blog/2019-01-31-using-react-context-api-with-gatsby/
 - SEO with Gatsby: https://gregberge.com/blog/gatsby-seo
 - Gatsby: https://www.gatsbyjs.org/docs/
 
 ### Lighthouse screenshots
 
-![Test 1](./assets/test-1.png)
-![Test 2](./assets/test-2.png)
-
-### App Screenshots
-
-Light Mode\
-<img src="./assets/light-mode.png" alt="Light Mode" width="700">
-<br><br>
-Dark Mode\
-<img src="./assets/dark-mode.png" alt="Dark Mode" width="700">
+todo
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
