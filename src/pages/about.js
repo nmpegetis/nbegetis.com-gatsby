@@ -129,9 +129,9 @@ export default ({ data }) => {
           <p className="i-5 mt-4 pt-2">
             From my childhood, my family and my surrounding people taught me
             some values that I respect, appreciate and forward. Some of these
-            are: goodness, kindness, environmentalism, peace, freedom, equality,
-            respect for privacy and volunteering. If you want to learn more
-            about me and what I am currently doing keep an eye out on{" "}
+            are: goodness, kindness, environmentalism, peace, freedom, respect
+            for equality, respect for privacy, and volunteering. If you want to
+            learn more about me and what I am currently doing keep an eye out on{" "}
             <Link to="/now">Now</Link> for updates, on{" "}
             <Link to="/blog">Blog</Link> for thoughts and multimedia posts and
             on <Link to="/projects">Projects</Link> to see what I've been up to!
