@@ -57,8 +57,7 @@ export default ({ data }) => {
                 <span className="blue"> Greek</span>-
                 <span className="yellow">Cypriot</span>
               </strong>{" "}
-              {occupation}
-              who lives in
+              {occupation} who lives in
               <strong>
                 <span className="red"> Switzerland</span>
               </strong>
