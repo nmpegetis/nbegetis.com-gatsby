@@ -25,11 +25,11 @@ As a new year's resolution, me and my girlfriend, we decided to track our monthl
 
 Finally, currently in my free time I enjoy:
 	1. Reading/listening some books, 
-	2. Playing chess with Margarita on this <a href="https://squareoffnow.com/" target="_blank">board</a> (present from a cousin of mine),
+	2. Playing chess with my girlfriend on this <a href="https://squareoffnow.com/" target="_blank">board</a> (present from a cousin of mine),
 	3. Studying some economics for my work and for personal reasons.
 
 ## New assets
-I also made some 4 big expenses in assets that I expect them to last:
+I also made some 6 big expenses in assets that I expect them to last:
 
 1. I bought a <a href="https://buy.garmin.com/de-DE/DE/p/643260" target="_blank">Garmin</a> watch to track my fitness, and I also connected it to <a href="https://www.strava.com/athletes/73291755" target="_blank">Strava</a>. Sharing my activities, keeps me motivated as I feel empowered and that I have a mutual understanding about the effort needed amongst my followers. Also, the watch so far helps me to keep better tracking of the exercises and the so useful feature to map the paths that you followed with GPS and the ability to analyze segments of your exercise and each time try to improve little by little to get closer to the goal, by comparing your fitness and health progress with others and most importantly with the past-YOU.
 2. I bought my skis. I started the winter season by renting some beginner skis and a bit after the mid of the season, feeling already comfortable and ready for the next step, I tried some other ones that were suitable for experienced skiers. Finally, by the end of the season, and having already loved my <a href="https://elanskis.com/eu/mens-skis/all-mountain" target="_blank">Amphibio</a> (I love this Greek word) skis I decided to buy them.

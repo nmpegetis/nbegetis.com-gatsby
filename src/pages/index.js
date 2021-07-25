@@ -52,17 +52,15 @@ export default ({ data }) => {
           <h3>Me in ten seconds</h3>
           <p>
             <i>
-              Hi! Welcome to my webpage! I am a {occupation} from
+              Hi! Welcome to my webpage! I am a
               <strong>
-                <span className="blue"> Greece🇬🇷</span>
+                <span className="blue"> Greek</span>-
+                <span className="yellow">Cypriot</span>
               </strong>{" "}
-              and
-              <strong>
-                <span className="yellow"> Cyprus🇨🇾</span>
-              </strong>{" "}
+              {occupation}
               who lives in
               <strong>
-                <span className="red"> Switzerland🇨🇭</span>
+                <span className="red"> Switzerland</span>
               </strong>
               . I am an explorer and I love any activity, in all four 🌴🍁🌲🌷,
               that needs a 🧭. In the summer I enjoy
