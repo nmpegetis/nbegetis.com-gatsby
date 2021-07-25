@@ -1,5 +1,5 @@
 ---
-title: "Be careful! What you just shared with us, maybe classified."
+title: "Beware of the information you share! Think before sharing."
 tags: ["information classification", "information", "classification", "secret", "friends", "thoughts", "July", "2021"]
 description: "Describe information classification within friends and give some examples"
 author: "Nikolas Begetis"
@@ -94,7 +94,7 @@ Then I will conclude with some explanation of my thought on these results.
 
 > **Q2 b**. Can I share and discuss this whole above information with my group friend Chris?
 
-* **A2 b**. No, not everything. Chris may be included in some **classified (Level 3)** discussions, like knowing Alice’s health problem, but he should not get to know from me, the real reason Alice broke up with him, as Alice shared this information in **secret with me (Level 4)**. N*o matter how many years have passed and how good friends I remain with Alice or Chris*, this information keeps its **severity/importance**, as long as I am concerned! And since it is some information that conserns only Alice and not me, only she can change the **severity/importance** whenever she likes.
+* **A2 b**. No, not everything. Chris may be included in some **classified (Level 3)** discussions, like knowing Alice’s health problem, but he should not get to know from me, the real reason Alice broke up with him, as Alice shared this information in **secret with me (Level 4)**. N*o matter how many years have passed and how good friends I remain with Alice or Chris*, this information keeps its **severity/importance**, as long as I am concerned! And since it is some information that conserns only Alice and not me, only she can change this information's severity/importance whenever she likes.
 
 > **Q2 c**. Can I share and discuss this whole above information with Dino?
 
@@ -120,7 +120,7 @@ Finally, taking again Topic 2 content, say now that Alice discloses to Chris the
 
 > **Q4 b**. Can I now share and discuss this whole above information with the rest of my school group of friends that me, Chris and Alice are involved?
 
-* **A4 b**. **No!**. As already said the sensitivity of information remains the same. It is still a **secret (Level 4)**, but no the restricted individuals are changed. Discussing this with the rest of the school group of friends would be that I would change the sensitivity to **confidential (Level 3)** and I am not authorized to do so, as this information is not my secret but Alice's secret. She is the only one that can change the sensitivity of this information. **Not even Chris**.
+* **A4 b**. **No!**. As already said the sensitivity of information remains the same. It is still a **secret (Level 4)**, but now the restricted individuals are changed. Discussing this with the rest of the school group of friends would mean that I would change the sensitivity to **confidential (Level 3)** and I am not authorized to do so, as this information is not my secret but Alice's secret. She is the only one that can change the sensitivity of this information. **Not even Chris**.
 
 ---
 
