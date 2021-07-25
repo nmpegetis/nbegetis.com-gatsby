@@ -1,7 +1,7 @@
 ---
 title: "The secret of storytelling. A historic recurrence approach."
 tags: ["story", "storytelling", "storytelling", "Historic Recurrence", "spiral", "thoughts", "June", "2021"]
-description: "Trip to Ponto Valentino, Canton of Ticino"
+description: "The secret of storytelling. A historic recurrence approach."
 author: "Nikolas Begetis"
 date: "2021-06-07"
 timeToRead: "3"
