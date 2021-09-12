@@ -1,6 +1,6 @@
 ---
 title: "Beware of the information you share! Think before sharing."
-tags: ["information classification", "information", "classification", "secret", "friends", "thoughts", "July", "2021"]
+tags: ["information classification", "information", "classification", "secret", "friends", "thoughts", "opinions", "July", "2021"]
 description: "Describe information classification within friends and give some examples"
 author: "Nikolas Begetis"
 date: "2021-07-25"
