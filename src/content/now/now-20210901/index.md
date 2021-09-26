@@ -47,6 +47,7 @@ Finally, currently in my free time I continue to enjoy:
 #### Next in my reading list:
   * <a href="https://www.amazon.com/Future-We-Choose-Surviving-Climate-ebook/dp/B07Y7HZLX8" target="_blank">The Future We Choose: Surviving the Climate Crisis</a>, by <a  href="https://www.amazon.com/Christiana-Figueres/e/B083M5M5FD/" target="_blank">Christiana Figueres</a> and <a href="https://www.amazon.com/Tom-Rivett-Carnac/e/B084QFZLP2/" target="_blank">Tom Rivett-Carnac</a>
   * <a href="https://www.goodreads.com/book/show/6611778-30-second-theories" target="_blank">30-Second Theories: The 50 Most Thought-provoking Theories in Science, Each Explained in Half a Minute</a>, by <a href="https://www.goodreads.com/book/show/6611778-30-second-theories" target="_blank">Paul Parsons and more</a>
+  * <a href="https://en.wikipedia.org/wiki/Homo_Deus:_A_Brief_History_of_Tomorrow" target="_blank">Homo Deus: A Brief History of Tomorrow</a>, by <a href="https://en.wikipedia.org/wiki/Yuval_Noah_Harari" target="_blank">Yuval Noah Harari</a>
   * <a href="https://www.goodreads.com/book/show/2848984-the-fire" target="_blank">The Fire</a>, by <a href="https://www.goodreads.com/author/show/7172.Katherine_Neville" target="_blank">Katherine Neville</a>
 
 
