@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Container, Badge, Col, Row } from "react-bootstrap"
 
 export default ({ excerpt, featuredImages, tags, title, to }) => {
@@ -9,9 +9,13 @@ export default ({ excerpt, featuredImages, tags, title, to }) => {
       <Link to={to} style={{ textDecoration: "none" }}>
         <Row>
           {featuredImages &&
-            featuredImages.map(image => (
-              <Col key={image.src}>
-                <Img fluid={image} className="m-auto w-75" />
+            featuredImages.map((image, idx) => (
+              <Col key={idx}>
+                <GatsbyImage
+                  image={getImage(image)}
+                  alt={title}
+                  className="m-auto w-75"
+                />
               </Col>
             ))}
         </Row>

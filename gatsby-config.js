@@ -150,9 +150,11 @@ module.exports = {
         link: `https://www.imdb.com/title/tt0458290/`,
       },
     ],
+    // build-time timestamp (set at build time)
+    lastUpdated: new Date().toISOString(),
   },
   plugins: [
-    `gatsby-plugin-preload-link-crossorigin`,
+    // removed `gatsby-plugin-preload-link-crossorigin` (incompatible with Gatsby v5)
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -165,6 +167,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -194,6 +197,6 @@ module.exports = {
         showSpinner: true,
       },
     },
-    `gatsby-plugin-build-date`,
+    // removed `gatsby-plugin-build-date` (incompatible with Gatsby v5)
   ],
 }

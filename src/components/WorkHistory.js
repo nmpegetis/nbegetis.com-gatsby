@@ -1,19 +1,21 @@
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Container, Row, Col, Badge } from "react-bootstrap"
 
 const CompanyCard = ({ frontmatter, image }) => {
   const { company, position, startDate, endDate, location } = frontmatter
+  const img = Array.isArray(image) ? image[0] : image
   return (
     <Container fluid className="m-auto work-history">
-      <Img
-        fluid={image}
-        style={{
-          maxHeight: "15vmax",
-          maxWidth: "15vmax",
-        }}
-        className="m-auto"
-      />
+      {img && (
+        <div style={{ maxHeight: "15vmax", maxWidth: "15vmax" }}>
+          <GatsbyImage
+            image={getImage(img)}
+            alt={company}
+            className="m-auto"
+          />
+        </div>
+      )}
       <div className="md-font">
         <h2 className="m-auto pt-2">{company}</h2>
         <h5 className="text-muted">{location}</h5>

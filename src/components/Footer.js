@@ -5,17 +5,15 @@ import { Link } from "gatsby"
 export default ({ showCredits }) => {
   const {
     site: {
-      siteMetadata: { author },
+      siteMetadata: { author, lastUpdated },
     },
-    currentBuildDate: { currentDate },
   } = useStaticQuery(query)
 
   return (
     <div className="footer text-muted text-center">
       <span className="m-auto">
         <Link to={"/credits/"} className="link">
-          <b>{author}</b> &copy; {new Date().getFullYear()}. Last updated on{" "}
-          {currentDate}
+          <b>{author}</b> &copy; {new Date().getFullYear()}. Last updated on {new Date(lastUpdated).toLocaleDateString()}
         </Link>
         {showCredits && (
           <span>
@@ -34,10 +32,8 @@ const query = graphql`
     site {
       siteMetadata {
         author
+        lastUpdated
       }
-    }
-    currentBuildDate {
-      currentDate
     }
   }
 `
