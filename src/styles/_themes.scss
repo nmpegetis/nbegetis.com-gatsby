@@ -1,54 +1,61 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "colors";
+// Prevent `!global` from creating new globals in Dart Sass 2+. Declaring it at root
+// ensures `themify` can assign to `$theme-map` without triggering new-global warning.
+$theme-map: null;
+
+// Prefer the module system. Avoid importing multiple modules into the global
+// namespace (e.g. `as *`) because it causes variable name collisions. Use
+// namespaces and reference colors explicitly to disambiguate sources.
+@use "bootstrap" as bs;
+@use "colors" as colors;
 
 /*
  * Theme definitions
  */
 
 $themes: (
-  light: (
-    backgroundColor: white,
-    footerBackground: white,
-    navBackground: $gray-100,
-    secondary: $gray-900,
-    textColor: $black,
-    firstName: orange,
-    lastName: $black,
-    linkHover: orange,
-    themeColor: orange,
-    heartColor: pink,
-    titleColor: orange,
-    hrefColor: orange,
-    github: $black,
-    linkedin: $linkedin-blue,
-    fcc: $fcc-green,
-    hr: $hr-green,
-    mail: $yellow,
-    file: $dark-blue,
-    iconBackground: $white,
-    cardBackground: $white,
+    light: (
+    backgroundColor: colors.$white,
+    footerBackground: colors.$white,
+    navBackground: colors.$gray-100,
+    secondary: colors.$gray-900,
+    textColor: colors.$black,
+    firstName: colors.$orange,
+    lastName: colors.$black,
+    linkHover: colors.$orange,
+    themeColor: colors.$orange,
+    heartColor: colors.$pink,
+    titleColor: colors.$orange,
+    hrefColor: colors.$orange,
+    github: colors.$black,
+    linkedin: colors.$linkedin-blue,
+    fcc: colors.$fcc-green,
+    hr: colors.$hr-green,
+    mail: colors.$yellow,
+    file: colors.$dark-blue,
+    iconBackground: colors.$white,
+    cardBackground: colors.$white,
   ),
-  dark: (
+    dark: (
     backgroundColor: #222,
     footerBackground: #222,
-    secondary: $gray-100,
-    navBackground: $dark-gray,
-    linkHover: $dark-blue,
-    textColor: $gray-300,
-    firstName: $gray-100,
-    lastName: $dark-blue,//$empire-red,
-    titleColor: $white,
-    hrefColor: $dark-blue,//$faded-red,
-    themeColor: $hover-blue, //$dark-red,
+    secondary: colors.$gray-100,
+    navBackground: colors.$dark-gray,
+    linkHover: colors.$dark-blue,
+    textColor: colors.$gray-300,
+    firstName: colors.$gray-100,
+    lastName: colors.$dark-blue,//$empire-red,
+    titleColor: colors.$white,
+    hrefColor: colors.$dark-blue,//$faded-red,
+    themeColor: colors.$hover-blue, //$dark-red,
     heartColor: red,
-    github: $dark-blue,    //$empire-red,
-    linkedin: $dark-blue,//$empire-red,
-    fcc: $dark-blue,//$empire-red,
-    hr: $dark-blue,//$empire-red,
-    mail: $dark-blue,//$empire-red,
-    file: $dark-blue,//$empire-red,
-    iconBackground: $black,
-    cardBackground: $dark-gray,
+    github: colors.$dark-blue,    //$empire-red,
+    linkedin: colors.$dark-blue,//$empire-red,
+    fcc: colors.$dark-blue,//$empire-red,
+    hr: colors.$dark-blue,//$empire-red,
+    mail: colors.$dark-blue,//$empire-red,
+    file: colors.$dark-blue,//$empire-red,
+    iconBackground: colors.$black,
+    cardBackground: colors.$dark-gray,
   ),
 );
 
