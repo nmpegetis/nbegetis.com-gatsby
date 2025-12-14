@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 export default ({ showCredits }) => {
   const {
     site: {
-      siteMetadata: { author },
+      siteMetadata: { author, lastUpdated },
     },
   } = useStaticQuery(query)
 
@@ -13,7 +13,7 @@ export default ({ showCredits }) => {
     <div className="footer text-muted text-center">
       <span className="m-auto">
         <Link to={"/credits/"} className="link">
-          <b>{author}</b> &copy; {new Date().getFullYear()}. Last updated on {new Date().toLocaleDateString()}
+          <b>{author}</b> &copy; {new Date().getFullYear()}. Last updated on {new Date(lastUpdated).toLocaleDateString()}
         </Link>
         {showCredits && (
           <span>
@@ -32,6 +32,7 @@ const query = graphql`
     site {
       siteMetadata {
         author
+        lastUpdated
       }
     }
   }

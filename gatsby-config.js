@@ -150,6 +150,8 @@ module.exports = {
         link: `https://www.imdb.com/title/tt0458290/`,
       },
     ],
+    // build-time timestamp (set at build time)
+    lastUpdated: new Date().toISOString(),
   },
   plugins: [
     // removed `gatsby-plugin-preload-link-crossorigin` (incompatible with Gatsby v5)
