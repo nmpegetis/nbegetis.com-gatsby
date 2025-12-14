@@ -37,7 +37,7 @@ const SEO = ({ description, lang, meta, image: img, title, pathname }) => {
                 { property: "og:image:height", content: img.height },
                 { name: "twitter:card", content: "summary_large_image" },
               ]
-            : [{ name: "twitter:card", content: "summary" }]
+            : [{ name: "twitter:card", content: "summary" }],
         )
         .concat(meta)}
     />

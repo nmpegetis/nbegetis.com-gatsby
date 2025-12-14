@@ -12,7 +12,7 @@ const SubTitle = ({ ttr, date, author }) => (
 export default ({ path, data }) => {
   const post = data.markdownRemark
   const photos = (data.allFile.edges || []).filter(el =>
-    el.node.relativePath.includes(path)
+    el.node.relativePath.includes(path),
   )
   return (
     <PostTemplate
@@ -45,7 +45,7 @@ export default ({ path, data }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

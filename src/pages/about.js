@@ -60,7 +60,7 @@ export default ({ data }) => {
                     &nbsp;<b>{attr}</b>&nbsp;
                     {i < designationLimit - 1 && <>||</>}
                   </span>
-                )
+                ),
             )}
           </p>
           <p className="i-5 mt-4 pt-2">

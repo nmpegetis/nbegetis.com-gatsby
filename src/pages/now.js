@@ -47,7 +47,7 @@ export default ({ data }) => {
     console.log("mpika", id)
     console.log(
       "filteredPosts",
-      filteredPosts.filter(p => p.node.id === id)
+      filteredPosts.filter(p => p.node.id === id),
     )
     const selected = filteredPosts.find(p => p.node.id === id)
     console.log(selected)
