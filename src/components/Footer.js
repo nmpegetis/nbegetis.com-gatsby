@@ -7,15 +7,13 @@ export default ({ showCredits }) => {
     site: {
       siteMetadata: { author },
     },
-    currentBuildDate: { currentDate },
   } = useStaticQuery(query)
 
   return (
     <div className="footer text-muted text-center">
       <span className="m-auto">
         <Link to={"/credits/"} className="link">
-          <b>{author}</b> &copy; {new Date().getFullYear()}. Last updated on{" "}
-          {currentDate}
+          <b>{author}</b> &copy; {new Date().getFullYear()}. Last updated on {new Date().toLocaleDateString()}
         </Link>
         {showCredits && (
           <span>
@@ -35,9 +33,6 @@ const query = graphql`
       siteMetadata {
         author
       }
-    }
-    currentBuildDate {
-      currentDate
     }
   }
 `

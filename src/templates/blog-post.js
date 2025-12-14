@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import PostTemplate from "./post-template"
-import { Image } from "react-bootstrap"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const SubTitle = ({ ttr, date, author }) => (
   <h5 className="text-muted mb-5">
@@ -25,17 +25,14 @@ export default ({ path, data }) => {
             author={post.frontmatter.author}
             tags={post.frontmatter.tags}
           />
-          {/* todo: hot fix below, change this in future */}
-          <Image
-            width="550"
-            fluid
-            src={
-              photos && photos[0] && photos[0].node.childImageSharp.fluid.src
-            }
-            alt={"profile-light"}
-            rounded
-            style={{ marginBottom: "20px" }}
-          />
+          {/* hero image (if available) */}
+          {photos && photos[0] && (
+            <GatsbyImage
+              image={getImage(photos[0].node.childImageSharp)}
+              alt={post.frontmatter.title}
+              style={{ marginBottom: "20px" }}
+            />
+          )}
         </React.Fragment>
       }
       excerpt={post.excerpt}
@@ -67,9 +64,7 @@ export const query = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 700, placeholder: BLURRED)
           }
           relativePath
         }

@@ -9,7 +9,32 @@ const SEO = ({ description, lang, meta, image: img, title, pathname }) => {
   const { site } = useStaticQuery(query)
 
   const metaDescription = description || site.siteMetadata.description
-  const image = img && img.src ? `${site.siteMetadata.siteUrl}${img.src}` : null
+
+  // Accept either the legacy { src, width, height } image shape or
+  // a gatsbyImageData object (or an array of such objects).
+  let image = null
+  let imageWidth = null
+  let imageHeight = null
+  if (img) {
+    // legacy object
+    if (img.src) {
+      image = `${site.siteMetadata.siteUrl}${img.src}`
+      imageWidth = img.width
+      imageHeight = img.height
+    } else {
+      const imageData = Array.isArray(img) ? img[0] : img
+      if (
+        imageData &&
+        imageData.images &&
+        imageData.images.fallback &&
+        imageData.images.fallback.src
+      ) {
+        image = `${site.siteMetadata.siteUrl}${imageData.images.fallback.src}`
+      }
+      if (imageData && imageData.width) imageWidth = imageData.width
+      if (imageData && imageData.height) imageHeight = imageData.height
+    }
+  }
 
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
@@ -30,11 +55,11 @@ const SEO = ({ description, lang, meta, image: img, title, pathname }) => {
         { name: `twitter:description`, content: metaDescription },
       ]
         .concat(
-          img
+          image
             ? [
                 { property: "og:image", content: image },
-                { property: "og:image:width", content: img.width },
-                { property: "og:image:height", content: img.height },
+                { property: "og:image:width", content: imageWidth },
+                { property: "og:image:height", content: imageHeight },
                 { name: "twitter:card", content: "summary_large_image" },
               ]
             : [{ name: "twitter:card", content: "summary" }],

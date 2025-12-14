@@ -42,7 +42,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/work/" } }
-      sort: { fields: [frontmatter___startDate], order: DESC }
+      sort: { frontmatter: { startDate: DESC } }
     ) {
       edges {
         node {
@@ -72,9 +72,7 @@ export const query = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 400, placeholder: BLURRED)
           }
           relativePath
         }

@@ -1038,7 +1038,7 @@
     "@babel/plugin-transform-modules-commonjs" "^7.27.1"
     "@babel/plugin-transform-typescript" "^7.28.5"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.6", "@babel/runtime@^7.16.3", "@babel/runtime@^7.20.13", "@babel/runtime@^7.21.0", "@babel/runtime@^7.24.7", "@babel/runtime@^7.26.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.3", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.6", "@babel/runtime@^7.16.3", "@babel/runtime@^7.20.13", "@babel/runtime@^7.21.0", "@babel/runtime@^7.24.7", "@babel/runtime@^7.26.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.28.4"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.28.4.tgz"
   integrity sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==
@@ -3471,7 +3471,7 @@ camelcase@5.3.1, camelcase@^5.0.0:
   resolved "https://registry.npmjs.org/camelcase/-/camelcase-5.3.1.tgz"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
-camelcase@^6.2.0:
+camelcase@^6.2.0, camelcase@^6.3.0:
   version "6.3.0"
   resolved "https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
@@ -4208,11 +4208,6 @@ data-view-byte-offset@^1.0.1:
     call-bound "^1.0.2"
     es-errors "^1.3.0"
     is-data-view "^1.0.1"
-
-date-and-time@^0.11.1:
-  version "0.11.1"
-  resolved "https://registry.npmjs.org/date-and-time/-/date-and-time-0.11.1.tgz"
-  integrity sha512-+1JkWME+UWRpCfvE1T0Vfbw629Ego0IcfHH0qtP4KhAXs7IJT2qsg1hNePqZhyD8Wby46HlW393lSL5PZSzDsA==
 
 date-fns@^2.30.0:
   version "2.30.0"
@@ -5731,13 +5726,6 @@ gatsby-parcel-config@1.15.0:
     "@parcel/transformer-js" "2.8.3"
     "@parcel/transformer-json" "2.8.3"
 
-gatsby-plugin-build-date@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-build-date/-/gatsby-plugin-build-date-1.0.0.tgz"
-  integrity sha512-XlR4w3mQqhRE241Kx4/0lFY78/TnY1IDqgvKzgk17RZUcM13QYk7GyuN5Ifx96NMbMEwUUeal4lDqSigfr2Ydw==
-  dependencies:
-    date-and-time "^0.11.1"
-
 gatsby-plugin-catch-links@^5.15.0:
   version "5.15.0"
   resolved "https://registry.npmjs.org/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-5.15.0.tgz"
@@ -5750,6 +5738,26 @@ gatsby-plugin-google-fonts@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz"
   integrity sha512-p1NVkn27GUnDA5qHM+Z4cCcLCJIardzZXMon3640sT4xuL/AZJbsx3HEt2KY/5oZu0UXIkytkxzV2Da4rQeUIg==
+
+gatsby-plugin-image@^3.15.0:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-3.15.0.tgz#0a481a7296017fe02af50f936392f98bcf6ad8fa"
+  integrity sha512-GlcBjJgRqBfTKG7iYRzqpdlar/MeKqNKRZBlvNhqu6fit68njRotCcoH+SnQizSgt+NoSYfjVY6mOjyD2LO8Dg==
+  dependencies:
+    "@babel/code-frame" "^7.18.6"
+    "@babel/parser" "^7.20.13"
+    "@babel/runtime" "^7.20.13"
+    "@babel/traverse" "^7.20.13"
+    babel-jsx-utils "^1.1.0"
+    babel-plugin-remove-graphql-queries "^5.15.0"
+    camelcase "^6.3.0"
+    chokidar "^3.6.0"
+    common-tags "^1.8.2"
+    fs-extra "^11.2.0"
+    gatsby-core-utils "^4.15.0"
+    gatsby-plugin-utils "^4.15.0"
+    objectFitPolyfill "^2.3.5"
+    prop-types "^15.8.1"
 
 gatsby-plugin-manifest@^5.15.0:
   version "5.15.0"
@@ -5799,13 +5807,6 @@ gatsby-plugin-page-creator@^5.15.0:
     gatsby-plugin-utils "^4.15.0"
     globby "^11.1.0"
     lodash "^4.17.21"
-
-gatsby-plugin-preload-link-crossorigin@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/gatsby-plugin-preload-link-crossorigin/-/gatsby-plugin-preload-link-crossorigin-1.0.2.tgz"
-  integrity sha512-3wnud525A6vfHvdZLVlhL8ZQq7wQ2SWJdaPBllwh2l5xUXw+IZF0Bc66BnGGVvfEX1dIyea/2hg0drzFjT4seQ==
-  dependencies:
-    "@babel/runtime" "^7.4.3"
 
 gatsby-plugin-react-helmet@^6.15.0:
   version "6.15.0"
@@ -8342,6 +8343,11 @@ object.values@^1.1.6, object.values@^1.2.1:
     call-bound "^1.0.3"
     define-properties "^1.2.1"
     es-object-atoms "^1.0.0"
+
+objectFitPolyfill@^2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/objectFitPolyfill/-/objectFitPolyfill-2.3.5.tgz#be8c83064aabfa4e88780f776c2013c48ce1f745"
+  integrity sha512-8Quz071ZmGi0QWEG4xB3Bv5Lpw6K0Uca87FLoLMKMWjB6qIq9IyBegP3b/VLNxv2WYvIMGoeUQ+c6ibUkNa8TA==
 
 on-finished@2.4.1, on-finished@~2.4.1:
   version "2.4.1"

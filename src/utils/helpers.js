@@ -5,14 +5,14 @@ export default {
       if (hasMultipleImages) {
         if (map.hasOwnProperty(slug)) {
           if (map[slug].length <= limit)
-            map[slug].push(image.node.childImageSharp.fluid)
+            map[slug].push(image.node.childImageSharp.gatsbyImageData)
         } else {
           const arr = []
-          arr.push(image.node.childImageSharp.fluid)
+          arr.push(image.node.childImageSharp.gatsbyImageData)
           map[slug] = arr
         }
       } else {
-        map[slug] = image.node.childImageSharp.fluid
+        map[slug] = image.node.childImageSharp.gatsbyImageData
       }
       return map
     }, {})

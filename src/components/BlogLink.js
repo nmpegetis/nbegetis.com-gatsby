@@ -1,14 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Card from "react-bootstrap/Card"
 import Badge from "react-bootstrap/Badge"
 
 export default props => {
-  console.log(props)
+  const img = Array.isArray(props.featuredImage)
+    ? props.featuredImage[0]
+    : props.featuredImage
+
   return (
     <Card className="card-container" as={Link} to={props.to}>
-      <Card.Img as={Img} fluid={props.featuredImage} className="h-50" />
+      <Card.Img as="div" className="h-50 p-0">
+        {img && (
+          <GatsbyImage
+            image={getImage(img)}
+            alt={props.title}
+            className="w-100 h-100"
+          />
+        )}
+      </Card.Img>
       {/* TODO add tags */}
       {/* <div className="d-inline-flex">
         {props.tags.map(tag => (
