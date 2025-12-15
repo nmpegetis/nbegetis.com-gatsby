@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Card from "react-bootstrap/Card"
-import Badge from "react-bootstrap/Badge"
-
-export default props => {
+// Badge is not used (tags are TODO). Export a named component so ESLint
+// rules like `import/no-anonymous-default-export` are satisfied.
+const BlogLink = props => {
   const img = Array.isArray(props.featuredImage)
     ? props.featuredImage[0]
     : props.featuredImage
@@ -46,3 +46,5 @@ export default props => {
     </Card>
   )
 }
+
+export default BlogLink

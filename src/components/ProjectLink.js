@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Container, Badge, Col, Row } from "react-bootstrap"
 
-export default ({ excerpt, featuredImages, tags, title, to }) => {
+const ProjectLink = ({ excerpt, featuredImages, tags = [], title, to }) => {
   return (
     <Container className="text-center">
       <Link to={to} style={{ textDecoration: "none" }}>
@@ -30,3 +30,5 @@ export default ({ excerpt, featuredImages, tags, title, to }) => {
     </Container>
   )
 }
+
+export default ProjectLink

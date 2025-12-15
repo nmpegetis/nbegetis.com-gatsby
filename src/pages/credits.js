@@ -3,7 +3,7 @@ import { PageTitle, PageLayout } from "../components"
 import { SEO } from "../utils"
 import Container from "react-bootstrap/Container"
 
-export default () => {
+const Credits = () => {
   return (
     <PageLayout>
       <SEO title="Credits" />
@@ -72,7 +72,7 @@ export default () => {
               -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 latest
               </a>
@@ -81,7 +81,7 @@ export default () => {
               <s>Add Last Updated timestamp on every new commit - 20210601</s> -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/e5d6cda69e0c330e10d858c0886e394af15bb3da"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 e5d6cda
               </a>
@@ -94,7 +94,7 @@ export default () => {
               -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/f7eb68eaceb6e370067a13520bf0d97a3ba83ef5"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 f7eb68e
               </a>
@@ -103,7 +103,7 @@ export default () => {
               <s>Produce Blog content - 20210528</s> -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/37fed906194009e1f284d2b935c8cbef5e5b4ae6"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 37fed90
               </a>
@@ -112,7 +112,7 @@ export default () => {
               <s>Increase page font size - 20210527</s> -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/037809b2b72f13d5812e1eb69118b8619418f6ed"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 037809b
               </a>
@@ -121,7 +121,7 @@ export default () => {
               <s>Fix for mobile screens. Menu icon not shown. - 20210526</s> -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/7657b5e3a426dc12246a2d8c439ff0a601481d98"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 7657b5e
               </a>
@@ -130,7 +130,7 @@ export default () => {
               <s>Move to left the logo - 20210526</s> -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/7657b5e3a426dc12246a2d8c439ff0a601481d98"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 7657b5e
               </a>
@@ -140,19 +140,19 @@ export default () => {
         <h3>Credits</h3>
         <p>
           This site is generated with the Gatsby, and is maintained by{" "}
-          <a href="https://www.gatsbyjs.com/about/" target="_blank">
+          <a href="https://www.gatsbyjs.com/about/" target="_blank" rel="noreferrer">
             these people
           </a>
           . The source code of this site is available on GitHub. I developed
           this site based on{" "}
           <a
             href="https://www.gatsbyjs.com/starters/surudhb/gatsby-personal-site-template"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             gatsby-personal-site-template
           </a>{" "}
           from{" "}
-          <a href="https://github.com/surudhb" target="_blank">
+          <a href="https://github.com/surudhb" target="_blank" rel="noreferrer">
             Surudh Bhutani
           </a>
           .
@@ -174,3 +174,5 @@ export default () => {
     </PageLayout>
   )
 }
+
+export default Credits

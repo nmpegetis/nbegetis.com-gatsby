@@ -1,4 +1,4 @@
-export default {
+const Helpers = {
   getImageMap: (images, regex, hasMultipleImages = true, limit = 3) => {
     return images.reduce((map, image) => {
       const slug = image.node.relativePath.match(regex)[0]
@@ -18,3 +18,5 @@ export default {
     }, {})
   },
 }
+
+export default Helpers

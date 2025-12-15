@@ -9,7 +9,7 @@ const SubTitle = ({ ttr, date, author }) => (
   </h5>
 )
 
-export default ({ path, data }) => {
+const BlogPost = ({ path, data }) => {
   const post = data.markdownRemark
   const photos = (data.allFile.edges || []).filter(el =>
     el.node.relativePath.includes(path),
@@ -40,6 +40,8 @@ export default ({ path, data }) => {
     />
   )
 }
+
+export default BlogPost
 
 export const query = graphql`
   query ($slug: String!) {

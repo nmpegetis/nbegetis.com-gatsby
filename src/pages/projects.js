@@ -4,7 +4,7 @@ import { PageLayout, PageTitle, ProjectLink } from "../components"
 import { SEO, Utils } from "../utils"
 import Container from "react-bootstrap/Container"
 
-export default ({ data }) => {
+const ProjectsPage = ({ data }) => {
   const allProjects = data.allMarkdownRemark.edges || []
   const allFeaturedImages = data.allFile.edges || []
   const regex = /\/[projects].*\/|$/
@@ -33,6 +33,8 @@ export default ({ data }) => {
     </PageLayout>
   )
 }
+
+export default ProjectsPage
 
 export const query = graphql`
   query {

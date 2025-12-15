@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import "./Fontawesome.js"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-export default () => {
+const SiteNavbar = () => {
   const { dark, toggleDark, toString } = useContext(ThemeContext)
   return (
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
@@ -52,3 +52,5 @@ export default () => {
     </Navbar>
   )
 }
+
+export default SiteNavbar

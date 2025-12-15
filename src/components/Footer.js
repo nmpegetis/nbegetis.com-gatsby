@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 
-export default ({ showCredits }) => {
+const Footer = ({ showCredits }) => {
   const {
     site: {
       siteMetadata: { author, lastUpdated },
@@ -13,7 +13,8 @@ export default ({ showCredits }) => {
     <div className="footer text-muted text-center">
       <span className="m-auto">
         <Link to={"/credits/"} className="link">
-          <b>{author}</b> &copy; {new Date().getFullYear()}. Last updated on {new Date(lastUpdated).toLocaleDateString()}
+          <b>{author}</b> &copy; {new Date().getFullYear()}. Last updated on{" "}
+          {new Date(lastUpdated).toLocaleDateString()}
         </Link>
         {showCredits && (
           <span>
@@ -26,6 +27,8 @@ export default ({ showCredits }) => {
     </div>
   )
 }
+
+export default Footer
 
 const query = graphql`
   query Author {

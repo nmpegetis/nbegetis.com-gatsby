@@ -1,6 +1,9 @@
-@import "../../static/fonts/fonts.css";
+// Use the module system where possible to avoid Sass @import deprecation warnings.
+// `as *` keeps the legacy behavior of bringing variables/mixins into the global scope.
+@use "themes" as *;
+@use "colors" as *;
 
-@import "themes";
+@import "../../static/fonts/fonts.css";
 
 html,
 body {

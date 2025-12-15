@@ -8,7 +8,7 @@ const SubTitle = ({ ttr, date, author }) => (
   </h5>
 )
 
-export default ({ data }) => {
+const NowPost = ({ data }) => {
   const post = data.markdownRemark
   return (
     <PostTemplate
@@ -25,6 +25,8 @@ export default ({ data }) => {
     />
   )
 }
+
+export default NowPost
 
 export const query = graphql`
   query ($slug: String!) {
