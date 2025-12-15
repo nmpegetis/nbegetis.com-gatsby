@@ -22,6 +22,10 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      - name: Lint
+        # Fail the job if there are any ESLint errors or warnings
+        run: yarn lint --max-warnings=0
+
       - name: Build
         run: yarn build
 
