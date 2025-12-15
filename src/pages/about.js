@@ -4,30 +4,13 @@ import { Container, Image } from "react-bootstrap"
 import { Link, graphql } from "gatsby"
 import { ThemeContext, SEO } from "../utils"
 
-export default ({ data }) => {
+const AboutPage = ({ data }) => {
   const { dark } = useContext(ThemeContext)
 
-  const MediaLink = ({ title, author, link }) => (
-    <li key={title} style={{ color: "gray" }}>
-      <a rel="noopener noreferrer" href={link}>
-        {title}
-      </a>
-      &nbsp;-<i>{author}</i>
-    </li>
-  )
 
-  const {
-    author,
-    occupation,
-    readingList,
-    showsList,
-    designations,
-    unemployed,
-  } = data.site.siteMetadata
-  const { toString } = useContext(ThemeContext)
 
-  const bookLinks = readingList.map(book => MediaLink(book))
-  const showLinks = showsList.map(show => MediaLink(show))
+  const { author, occupation, designations, unemployed } = data.site.siteMetadata
+  // `toString`, `bookLinks` and `showLinks` aren't needed; keep implementation minimal
   const designationLimit = 3
 
   const shuffleArray = array => {
@@ -195,6 +178,8 @@ export default ({ data }) => {
     </PageLayout>
   )
 }
+
+export default AboutPage
 
 export const query = graphql`
   query {

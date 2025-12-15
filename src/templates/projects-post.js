@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import PostTemplate from "./post-template"
 import Badge from "react-bootstrap/Badge"
 
-const SubTitle = ({ tags }) => (
+const SubTitle = ({ tags = [] }) => (
   <div className="mb-5">
     {tags.map(tag => (
       <Badge key={tag} pill variant="dark" className="px-3 mr-1">
@@ -13,7 +13,7 @@ const SubTitle = ({ tags }) => (
   </div>
 )
 
-export default ({ data }) => {
+const ProjectsPost = ({ data }) => {
   const post = data.markdownRemark
   return (
     <PostTemplate
@@ -24,6 +24,8 @@ export default ({ data }) => {
     />
   )
 }
+
+export default ProjectsPost
 
 export const query = graphql`
   query ($slug: String!) {

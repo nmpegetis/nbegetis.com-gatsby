@@ -4,7 +4,7 @@ import { PageLayout, PageTitle } from "../components"
 
 import SEO from "../utils/seo"
 
-export default ({ title, excerpt, html, subTitle }) => (
+const PostTemplate = ({ title, excerpt, html, subTitle }) => (
   <PageLayout>
     <SEO title={title} description={excerpt} />
     <Container className="text-center" fluid>
@@ -16,3 +16,5 @@ export default ({ title, excerpt, html, subTitle }) => (
     </Container>
   </PageLayout>
 )
+
+export default PostTemplate

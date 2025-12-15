@@ -4,7 +4,7 @@ import { PageLayout, PageTitle, BlogLink } from "../components"
 import { SEO, Utils } from "../utils"
 import { Container, Form, FormControl } from "react-bootstrap"
 
-export default ({ data }) => {
+const BlogPage = ({ data }) => {
   const [state, setState] = useState({
     filteredData: [],
     query: "",
@@ -74,6 +74,8 @@ export default ({ data }) => {
     </PageLayout>
   )
 }
+
+export default BlogPage
 
 export const query = graphql`
   query {

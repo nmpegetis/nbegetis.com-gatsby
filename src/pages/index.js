@@ -1,14 +1,13 @@
-import React, { useContext } from "react"
+import React from "react"
 import { graphql, Link } from "gatsby"
-import ThemeContext from "../utils/theme"
+// ThemeContext is not needed in this file
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
 import { Container } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-export default ({ data }) => {
+const HomePage = ({ data }) => {
   const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata
-  const { dark } = useContext(ThemeContext)
   return (
     <PageLayout>
       <SEO title="Home" />
@@ -172,6 +171,8 @@ export default ({ data }) => {
     </PageLayout>
   )
 }
+
+export default HomePage
 
 export const query = graphql`
   query {

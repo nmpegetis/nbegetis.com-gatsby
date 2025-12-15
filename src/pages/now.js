@@ -10,7 +10,7 @@ const SubTitle = ({ ttr, date, author }) => (
   </h5>
 )
 
-export default ({ data }) => {
+const NowPage = ({ data }) => {
   const [state, setState] = useState({
     filteredData: [],
     query: "",
@@ -18,7 +18,7 @@ export default ({ data }) => {
   })
 
   const allPosts = data.allMarkdownRemark.edges || []
-  const regex = /\/[now].*\/|$/
+  // regex was unused; removed to satisfy lint rules
 
   const handleChange = e => {
     const query = e.target.value
@@ -44,17 +44,8 @@ export default ({ data }) => {
   }
 
   const select = id => e => {
-    console.log("mpika", id)
-    console.log(
-      "filteredPosts",
-      filteredPosts.filter(p => p.node.id === id),
-    )
     const selected = filteredPosts.find(p => p.node.id === id)
-    console.log(selected)
-    setState({
-      query,
-      selectedPost: selected,
-    })
+    setState(prev => ({ ...prev, selectedPost: selected }))
   }
 
   const { filteredData, query, selectedPost } = state
@@ -110,6 +101,8 @@ export default ({ data }) => {
     </PageLayout>
   )
 }
+
+export default NowPage
 //todo: the below query needs optimization not to bring all the now texts but only the latest one
 export const query = graphql`
   query {

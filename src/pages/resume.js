@@ -5,7 +5,7 @@ import { SEO, Utils } from "../utils"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Container from "react-bootstrap/Container"
 
-export default ({ data }) => {
+const ResumePage = ({ data }) => {
   const history = data.allMarkdownRemark.edges || []
   const images = data.allFile.edges || []
   const imageMap = Utils.getImageMap(images, /\/[work].*\/|$/)
@@ -37,6 +37,8 @@ export default ({ data }) => {
     </PageLayout>
   )
 }
+
+export default ResumePage
 
 export const query = graphql`
   query {
