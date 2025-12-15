@@ -137,6 +137,20 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
+## Audits (Lighthouse & Accessibility)
+
+We run Lighthouse and Pa11y audits in CI and upload JSON reports as artifacts (`audit-reports`).
+
+To run the audits locally:
+
+- Build the site: `yarn build`
+- Serve the `public/` folder: `npx http-server public -p 8080`
+- Run Lighthouse (saves JSON):
+  - `npx -y lighthouse http://127.0.0.1:8080 --output=json --output-path=reports/lighthouse.json --chrome-flags="--no-sandbox --headless"`
+- Run Pa11y (saves JSON):
+  - `npx -y pa11y http://127.0.0.1:8080 --reporter json > reports/pa11y.json`
+
+Note: If local npx/npm commands fail due to your environment (Node/npm incompatibilities), run the audit workflow in GitHub Actions instead — it runs the same checks and uploads the reports as build artifacts.
 ## 🎓 Learning Gatsby
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
