@@ -96,13 +96,17 @@ Local quick commands:
 
 ```bash
 # Pa11y accessibility scan (JSON)
-npx -y pa11y http://127.0.0.1:8080 --reporter json > reports/pa11y.json
+# pa11y reads `pa11y.json` in the project root (we set chrome args there for CI)
+npx -y pa11y http://127.0.0.1:8080 --config ./pa11y.json --reporter json > reports/pa11y.json 2> reports/pa11y.err.txt
 
 # Lighthouse JSON report
 npx -y lighthouse http://127.0.0.1:8080 --output=json --output-path=reports/lighthouse.json --chrome-flags="--no-sandbox --headless"
 ```
 
-If your local `npx`/`npm` environment is flaky, prefer checking the `audit` job artifacts in GitHub Actions (reproducible CI env).
+Notes:
+- The repo contains `pa11y.json` which sets Chrome launch args (useful on CI where sandboxing is restricted).
+- When running Pa11y in CI we also save `reports/pa11y.err.txt` (stderr) and `reports/pa11y.exit` (exit code) to help debug runtime problems.
+- If your local `npx`/`npm` environment is flaky, run the audit workflow in GitHub Actions instead — it runs the same checks and uploads the reports as artifacts.
 
 ---
 
