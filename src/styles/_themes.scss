@@ -110,8 +110,10 @@ $themes: (
 
 .nav-links a, .now-links a {
   @include themify($themes) {
-    color: themed("linkHover") !important;
+    // Use theme text color for better contrast; keep theme link color for hover state.
+    color: themed("textColor") !important;
     &:hover {
+      color: themed("hrefColor") !important;
       text-decoration: underline themed("hrefColor") solid;
     }
   }
@@ -119,9 +121,10 @@ $themes: (
 
 .link {
   @include themify($themes) {
-    color: themed("linkHover") !important;
+    color: themed("textColor") !important;
 
     &:hover {
+      color: themed("hrefColor") !important;
       text-decoration: underline themed("hrefColor") solid;
     }
   }

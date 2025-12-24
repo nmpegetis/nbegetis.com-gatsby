@@ -9,11 +9,12 @@ const SiteNavbar = () => {
   const { dark, toggleDark, toString } = useContext(ThemeContext)
   return (
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
-      <Navbar.Brand className="pl-2 ml-2" as={Link} to="/">
+      <Navbar.Brand className="pl-2 ml-2" as={Link} to="/" aria-label="Home">
         <FontAwesomeIcon
           icon={"compass"}
           className={`brand-icon ${dark ? "dark" : "light"}`}
           title="Home"
+          aria-hidden={false}
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -37,7 +38,8 @@ const SiteNavbar = () => {
           <Nav.Link className="ml-2" as={Link} to="/resume" title="Resume">
             Resume
           </Nav.Link>
-          <Form className="ml-3 my-auto">
+          {/* Theme toggle is not a form submit; render as grouping element to avoid a form without submit button. */}
+          <div className="ml-3 my-auto" role="group" aria-label="Theme toggle">
             <Form.Check
               type="switch"
               id="custom-switch"
@@ -46,7 +48,7 @@ const SiteNavbar = () => {
               checked={dark}
               onChange={toggleDark}
             />
-          </Form>
+          </div>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
