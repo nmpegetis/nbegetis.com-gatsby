@@ -21,35 +21,38 @@ const Credits = () => {
               "overflow-x": "hidden",
             }}
           >
-            <li>Link 'so far' with an in-page href to "Past 'Now's"</li>
-            <li>Fix code in this Credits page with UX principles</li>
-            <li>Add tags in blog post cards and pages</li>
-            <li>Make tags in whole web base clickable, and filterable</li>
-            <li>Add plugin for photos preview</li>
-            <li>Add tags in blog post cards and pages</li>
-            <li>Add content in Projects</li>
-            <li>Add content in Resume</li>
+            <li>TODO: Link 'so far' with an in-page href to "Past 'Now's"</li>
+            <li>TODO: Fix code in this Credits page with UX principles</li>
+            <li>TODO: Add tags in blog post cards and pages</li>
+            <li>TODO: Make tags in whole web base clickable, and filterable</li>
+            <li>TODO: Add plugin for photos preview</li>
+            <li>TODO: Add tags in blog post cards and pages</li>
+            <li>TODO: Add content in Projects</li>
+            <li>TODO: Add content in Resume</li>
             <li>
-              g Serve books reading list etc. from graphql. Show top # books
+              TODO: Serve books reading list etc. from graphql. Show top # books
               based on my ratings
             </li>
-            <li>Change wepbage language based on location</li>
-            <li>Start by writing some blog posts and remove dummy blogposts</li>
-            <li>Add strava plugins or garmin to use within blog posts</li>
+            <li>TODO: Change wepbage language based on location</li>
             <li>
-              Add a drop down menu item functionality
+              TODO: Start by writing some blog posts and remove dummy blogposts
+            </li>
+            <li>TODO: Add strava plugins or garmin to use within blog posts</li>
+            <li>
+              TODO: Add a drop down menu item functionality
               <ul>
                 <li>
-                  Add a 'Future' page in 'Now' drop down menu, for Future plans
-                  (shortterm, midterm, longterm), priorities and bucketlist.
+                  TODO: Add a 'Future' page in 'Now' drop down menu, for Future
+                  plans (shortterm, midterm, longterm), priorities and
+                  bucketlist.
                 </li>
               </ul>
             </li>
             <li>
-              Decide if there is needed any background image for this webpage to
-              make this more personal
+              TODO: Decide if there is needed any background image for this
+              webpage to make this more personal
             </li>
-            <li>Link 'so far' with an in-page href to "Past 'Now's"</li>
+            <li>TODO: Link 'so far' with an in-page href to "Past 'Now's"</li>
           </ul>
         </p>
         <hr />
@@ -72,7 +75,8 @@ const Credits = () => {
               -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 latest
               </a>
@@ -81,7 +85,8 @@ const Credits = () => {
               <s>Add Last Updated timestamp on every new commit - 20210601</s> -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/e5d6cda69e0c330e10d858c0886e394af15bb3da"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 e5d6cda
               </a>
@@ -94,7 +99,8 @@ const Credits = () => {
               -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/f7eb68eaceb6e370067a13520bf0d97a3ba83ef5"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 f7eb68e
               </a>
@@ -103,7 +109,8 @@ const Credits = () => {
               <s>Produce Blog content - 20210528</s> -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/37fed906194009e1f284d2b935c8cbef5e5b4ae6"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 37fed90
               </a>
@@ -112,7 +119,8 @@ const Credits = () => {
               <s>Increase page font size - 20210527</s> -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/037809b2b72f13d5812e1eb69118b8619418f6ed"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 037809b
               </a>
@@ -121,7 +129,8 @@ const Credits = () => {
               <s>Fix for mobile screens. Menu icon not shown. - 20210526</s> -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/7657b5e3a426dc12246a2d8c439ff0a601481d98"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 7657b5e
               </a>
@@ -130,7 +139,8 @@ const Credits = () => {
               <s>Move to left the logo - 20210526</s> -{" "}
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/7657b5e3a426dc12246a2d8c439ff0a601481d98"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 7657b5e
               </a>
@@ -140,14 +150,19 @@ const Credits = () => {
         <h3>Credits</h3>
         <p>
           This site is generated with the Gatsby, and is maintained by{" "}
-          <a href="https://www.gatsbyjs.com/about/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.gatsbyjs.com/about/"
+            target="_blank"
+            rel="noreferrer"
+          >
             these people
           </a>
           . The source code of this site is available on GitHub. I developed
           this site based on{" "}
           <a
             href="https://www.gatsbyjs.com/starters/surudhb/gatsby-personal-site-template"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             gatsby-personal-site-template
           </a>{" "}
