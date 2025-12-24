@@ -74,8 +74,23 @@ jobs:
       - name: Run Pa11y (save JSON report)
         # Use pa11y config to pass Chrome launch args (CLI doesn't accept --chrome-launcher-args)
         run: |
+          set -o pipefail
+          # Run pa11y, capture stdout to JSON and stderr to a log
           npx -y pa11y http://127.0.0.1:8080 --config ./pa11y.json --reporter json --debug > reports/pa11y.json 2> reports/pa11y.err.txt || true
-          echo $? > reports/pa11y.exit || true
+          EXIT_CODE=$?
+          # Exit code 1 => technical fault (fail the job); 0 or 2 are acceptable (2 == page has accessibility errors)
+          if [ "$EXIT_CODE" -eq 1 ]; then
+            echo "Pa11y failed to run (exit code 1). See reports/pa11y.err.txt" >&2
+            cat reports/pa11y.err.txt >&2 || true
+            exit 1
+          fi
+          # Ensure the report file exists and is non-empty
+          if [ ! -s reports/pa11y.json ]; then
+            echo "Pa11y did not produce a report (empty or missing reports/pa11y.json). See reports/pa11y.err.txt" >&2
+            cat reports/pa11y.err.txt >&2 || true
+            exit 1
+          fi
+          echo "Pa11y finished with exit code $EXIT_CODE; report at reports/pa11y.json"
 
       - name: Upload audit reports
         uses: actions/upload-artifact@v4

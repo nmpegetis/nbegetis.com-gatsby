@@ -107,6 +107,9 @@ Notes:
 - The repo contains `pa11y.json` which sets Chrome launch args (useful on CI where sandboxing is restricted).
 - When running Pa11y in CI we also save `reports/pa11y.err.txt` (stderr) and `reports/pa11y.exit` (exit code) to help debug runtime problems.
 - If your local `npx`/`npm` environment is flaky, run the audit workflow in GitHub Actions instead — it runs the same checks and uploads the reports as artifacts.
+ - The repo contains `pa11y.json` which sets Chrome launch args (useful on CI where sandboxing is restricted).
+ - CI captures Pa11y stdout to `reports/pa11y.json` and stderr to `reports/pa11y.err.txt` for debugging. The audit job will fail if Pa11y has a technical fault (exit code 1) or if it produces an empty/missing report.
+ - If your local `npx`/`npm` environment is flaky, run the audit workflow in GitHub Actions instead — it runs the same checks and uploads the reports as artifacts.
 
 ---
 
