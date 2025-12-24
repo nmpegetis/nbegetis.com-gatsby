@@ -1,57 +1,152 @@
-See me [live!](https://nbegetis.com/)
+# nbegetis.com — Nikolas Begetis's personal site (Gatsby)
 
-## Usage
+[![CI](https://github.com/nmpegetis/nbegetis.com-gatsby/actions/workflows/ci.yml/badge.svg)](https://github.com/nmpegetis/nbegetis.com-gatsby/actions)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-`npm i -g gatsby-cli`\
-`gatsby new your-site-name https://github.com/nmpegetis/nbegetis.com-gatsby.git`\
-`cd your-site-name && gatsby develop`
+This repository powers the personal site at https://nbegetis.com. It's a small Gatsby site with blog/project pages, a "Now" page and some utility pages.
 
-## 📋 Starter README
+This README is geared toward contributors who want to run, enhance, audit, or deploy the site.
 
-- A Gatsby starter for a minimalist portfolio with `SEO` and app theming using `React Context`, `Bootstrap` and `Sass`
-- I highly recommend going through Gatsby's [tutorial](https://www.gatsbyjs.org/tutorial/) before getting started.
+---
 
-### What does this starter offer?
+## 🚀 Quick start
 
-- The starter is based off of the official [hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world) starter provided.
-- Everything in the starter is reconfigurable.
-- This starter is really a demonstation of what Gatsby is capable of.
-- Built in support for `SEO`, light/dark mode and `bootstrap`
-- Starter comes with a locally hosted font `Aurebesh`, but feel free to remove/replace it
-- Starter uses fontawesome icons for affiliate links
-- Starter uses `gatsby-node.js` and Markdown files to programatically create pages for blog posts and projects
-- Starter uses `siteMetadata` to create `About` page
+Prerequisites:
 
-### The file structure is as follows:
+- Node.js 18+ (Node 20 used in CI)
+- Yarn (or npm)
+- npx (available in npm >= 5.2) for running audit tools
 
-- **Components**: Re-usable components to be used throughout the app
-- **Content**: Contains relevant markdown files and images for blog posts or projects
-- **Templates**: Contains files that create the template html for a blog post or project details page
-- **Styles**: Contains the sass files used for adding custom styling to the app
-- **Utils**: Contains helper files, seo, and theme management
-- **Pages**: Contains the different pages
-- **Static**: Contains static assets (i.e. self-hosted fonts or images) that bypass gatsby pipeline
+Install deps:
 
-### Understanding important dependencies:
+```bash
+yarn install
+# or: npm install
+```
 
-- Gatbsy recommends using its plugins whenever possible, but not always. See [documentation](https://www.gatsbyjs.org/docs/plugins/) for more details.
-- Gatsby plugins are used by Gatsby's build process and provide and API for certain tasks.
-- `Bootstrap` is a CSS framework that comes with already defined CSS classes
-- `React Bootstrap` is an abstraction of `Bootstrap` providing some basic styling built-in to its components
-- `Helmet` is used to add SEO to the site making it easier for search engines to relate search keywords to your website.
-- `Fontawesome` is used for icons
-- `Howler` is used to manage audio files
+Run in development:
 
-### Credits
+```bash
+yarn develop
+# or: npm run develop
+```
 
-- Starter template of surudhb: https://www.gatsbyjs.com/starters/surudhb/gatsby-personal-site-template
-- Using Context API with Gatsby: https://www.gatsbyjs.org/blog/2019-01-31-using-react-context-api-with-gatsby/
-- SEO with Gatsby: https://gregberge.com/blog/gatsby-seo
-- Gatsby: https://www.gatsbyjs.org/docs/
+Build for production:
 
-### Lighthouse screenshots
+```bash
+yarn build
+# or: npm run build
+```
 
-todo
+Serve built site locally (production-like):
+
+```bash
+yarn serve
+# or: npx http-server public -p 8080
+```
+
+---
+
+## 🧰 Scripts you should know about
+
+Useful scripts (run with `yarn <script>` or `npm run <script>`):
+
+- `develop` — start local dev server
+- `build` — build static site into `public/`
+- `serve` — serve built site (`gatsby serve`)
+- `lint` — run ESLint (`src/**/*.{js,jsx}`)
+- `lint:fix` — run ESLint with `--fix`
+- `format` — run Prettier
+- `audit:pa11y` — run Pa11y against `http://127.0.0.1:8080` (requires `public/` served)
+- `audit:lighthouse` — run Lighthouse and save JSON report (requires `public/` served)
+- `audit:local` — runs Pa11y and Lighthouse locally (uses `npx`)
+
+Example:
+
+```bash
+# build+serve then run local audits
+yarn build
+npx http-server public -p 8080 &
+yarn audit:local
+```
+
+---
+
+## 🔎 Linting & style
+
+ESLint runs in CI and is configured to fail the build if there are any errors or warnings (see `.github/workflows/ci.yml`). Use:
+
+```bash
+yarn lint --max-warnings=0
+```
+
+Prettier is used for formatting:
+
+```bash
+yarn format
+```
+
+---
+
+## 🧪 Audits (Accessibility & Performance)
+
+We run Lighthouse and Pa11y in CI (artifact: `audit-reports`). Use these tools locally to reproduce findings.
+
+Local quick commands:
+
+```bash
+# Pa11y accessibility scan (JSON)
+# pa11y reads `pa11y.json` in the project root (we set chrome args there for CI)
+npx -y pa11y http://127.0.0.1:8080 --config ./pa11y.json --reporter json > reports/pa11y.json 2> reports/pa11y.err.txt
+
+# Lighthouse JSON report
+npx -y lighthouse http://127.0.0.1:8080 --output=json --output-path=reports/lighthouse.json --chrome-flags="--no-sandbox --headless"
+```
+
+Notes:
+- The repo contains `pa11y.json` which sets Chrome launch args (useful on CI where sandboxing is restricted).
+- When running Pa11y in CI we also save `reports/pa11y.err.txt` (stderr) and `reports/pa11y.exit` (exit code) to help debug runtime problems.
+- If your local `npx`/`npm` environment is flaky, run the audit workflow in GitHub Actions instead — it runs the same checks and uploads the reports as artifacts.
+ - The repo contains `pa11y.json` which sets Chrome launch args (useful on CI where sandboxing is restricted).
+ - CI captures Pa11y stdout to `reports/pa11y.json` and stderr to `reports/pa11y.err.txt` for debugging. The audit job will fail if Pa11y has a technical fault (exit code 1) or if it produces an empty/missing report.
+ - If your local `npx`/`npm` environment is flaky, run the audit workflow in GitHub Actions instead — it runs the same checks and uploads the reports as artifacts.
+
+---
+
+## ✅ Contributing
+
+1. Open an issue describing what you'd like to change or fix.
+2. Create a topic branch: `git checkout -b feat/your-feature` or `fix/description`.
+3. Make small, well-scoped commits and keep CI green (lint + build + audits as applicable).
+4. Open a PR referencing the issue and include verification steps and (if relevant) audit JSONs.
+
+Guidelines:
+
+- Keep changes small and focused.
+- When adding content, follow the existing content patterns under `src/content/`.
+- For accessibility changes, attach Pa11y/Lighthouse JSON when possible.
+
+---
+
+## 📝 Known TODOs & Issues
+
+There are inline TODOs in the codebase (tags UI, Credits cleanup, Now query optimization, photo previews, i18n, fitness integrations, etc.). Many are filed as issues. Please claim an issue before starting work.
+
+---
+
+## 📦 Deploy
+
+This site can be deployed on Netlify, Vercel, or any static host. The repository contains `netlify.toml` for Netlify deploys.
+
+---
+
+## 🧾 License
+
+MIT — see `LICENSE`.
+
+---
+
+If you'd like, I can add `CONTRIBUTING.md` and issue/PR templates to standardize contribution flow — say the word and I'll add them.
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
@@ -137,6 +232,20 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
+## Audits (Lighthouse & Accessibility)
+
+We run Lighthouse and Pa11y audits in CI and upload JSON reports as artifacts (`audit-reports`).
+
+To run the audits locally:
+
+- Build the site: `yarn build`
+- Serve the `public/` folder: `npx http-server public -p 8080`
+- Run Lighthouse (saves JSON):
+  - `npx -y lighthouse http://127.0.0.1:8080 --output=json --output-path=reports/lighthouse.json --chrome-flags="--no-sandbox --headless"`
+- Run Pa11y (saves JSON):
+  - `npx -y pa11y http://127.0.0.1:8080 --reporter json > reports/pa11y.json`
+
+Note: If local npx/npm commands fail due to your environment (Node/npm incompatibilities), run the audit workflow in GitHub Actions instead — it runs the same checks and uploads the reports as build artifacts.
 ## 🎓 Learning Gatsby
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:

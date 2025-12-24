@@ -22,6 +22,10 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      - name: Lint
+        # Fail the job if there are any ESLint errors or warnings
+        run: yarn lint --max-warnings=0
+
       - name: Build
         run: yarn build
 
@@ -31,3 +35,65 @@ jobs:
         with:
           name: public
           path: public
+
+  audit:
+    name: Audit (Lighthouse + Pa11y)
+    runs-on: ubuntu-latest
+    needs: build
+    if: ${{ needs.build.result == 'success' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Download built site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: public
+          path: ./public
+
+      - name: Start static server
+        run: |
+          npx -y http-server ./public -p 8080 -a 127.0.0.1 &
+
+      - name: Wait for server to be ready
+        run: npx -y wait-on http://127.0.0.1:8080
+
+      - name: Create reports dir
+        run: mkdir -p reports
+
+      - name: Run Lighthouse (save JSON report)
+        continue-on-error: true
+        run: |
+          npx -y lighthouse http://127.0.0.1:8080 --output=json --output-path=reports/lighthouse.json --chrome-flags="--no-sandbox --headless"
+
+      - name: Run Pa11y (save JSON report)
+        # Use pa11y config to pass Chrome launch args (CLI doesn't accept --chrome-launcher-args)
+        run: |
+          set -o pipefail
+          # Run pa11y, capture stdout to JSON and stderr to a log
+          npx -y pa11y http://127.0.0.1:8080 --config ./pa11y.json --reporter json --debug > reports/pa11y.json 2> reports/pa11y.err.txt || true
+          EXIT_CODE=$?
+          # Exit code 1 => technical fault (fail the job); 0 or 2 are acceptable (2 == page has accessibility errors)
+          if [ "$EXIT_CODE" -eq 1 ]; then
+            echo "Pa11y failed to run (exit code 1). See reports/pa11y.err.txt" >&2
+            cat reports/pa11y.err.txt >&2 || true
+            exit 1
+          fi
+          # Ensure the report file exists and is non-empty
+          if [ ! -s reports/pa11y.json ]; then
+            echo "Pa11y did not produce a report (empty or missing reports/pa11y.json). See reports/pa11y.err.txt" >&2
+            cat reports/pa11y.err.txt >&2 || true
+            exit 1
+          fi
+          echo "Pa11y finished with exit code $EXIT_CODE; report at reports/pa11y.json"
+
+      - name: Upload audit reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-reports
+          path: reports
