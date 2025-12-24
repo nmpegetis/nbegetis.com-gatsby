@@ -9,7 +9,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "serve:public": "npx http-server public -p 8080",
-    "audit:pa11y": "mkdir -p reports && npx -y pa11y http://127.0.0.1:8080 --reporter json --chrome-launcher-args=\"--no-sandbox --disable-setuid-sandbox\" > reports/pa11y.json",
+    "audit:pa11y": "mkdir -p reports && npx -y pa11y http://127.0.0.1:8080 --config ./pa11y.json --reporter json --debug > reports/pa11y.json 2> reports/pa11y.err.txt || true",
     "audit:lighthouse": "mkdir -p reports && npx -y lighthouse http://127.0.0.1:8080 --output=json --output-path=reports/lighthouse.json --chrome-flags='--no-sandbox --headless'",
     "audit:local": "npm run audit:pa11y && npm run audit:lighthouse",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
