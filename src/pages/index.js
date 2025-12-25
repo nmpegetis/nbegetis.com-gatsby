@@ -105,6 +105,7 @@ const HomePage = ({ data }) => {
             href="https://github.com/nmpegetis/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub (opens in new tab)"
           >
             <FontAwesomeIcon
               icon={["fab", "github"]}
@@ -116,6 +117,7 @@ const HomePage = ({ data }) => {
             href="https://www.linkedin.com/in/nmpegetis/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn (opens in new tab)"
           >
             <FontAwesomeIcon
               icon={["fab", "linkedin"]}
@@ -152,6 +154,7 @@ const HomePage = ({ data }) => {
             href="mailto:begetis@protonmail.com"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Email (opens mail client)"
           >
             <FontAwesomeIcon
               icon={["fas", "envelope"]}
@@ -159,7 +162,7 @@ const HomePage = ({ data }) => {
               title="e-mail"
             />
           </a>
-          <a href="../../resume.pdf" target="_blank" download>
+          <a href="../../resume.pdf" target="_blank" download aria-label="Resume (PDF, opens in new tab)">
             <FontAwesomeIcon
               icon={["fas", "file-alt"]}
               className="icons file"
