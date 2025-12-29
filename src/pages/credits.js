@@ -21,37 +21,14 @@ const Credits = () => {
               "overflow-x": "hidden",
             }}
           >
-            <li>TODO: Link 'so far' with an in-page href to "Past 'Now's"</li>
             <li>TODO: Fix code in this Credits page with UX principles</li>
-            <li>TODO: Add tags in blog post cards and pages</li>
-            <li>TODO: Make tags in whole web base clickable, and filterable</li>
-            <li>TODO: Add plugin for photos preview</li>
-            <li>TODO: Add tags in blog post cards and pages</li>
             <li>TODO: Add content in Resume</li>
-            <li>
-              TODO: Serve books reading list etc. from graphql. Show top # books
-              based on my ratings
-            </li>
             <li>TODO: Change wepbage language based on location</li>
-            <li>
-              TODO: Start by writing some blog posts and remove dummy blogposts
-            </li>
             <li>TODO: Add strava plugins or garmin to use within blog posts</li>
-            <li>
-              TODO: Add a drop down menu item functionality
-              <ul>
-                <li>
-                  TODO: Add a 'Future' page in 'Now' drop down menu, for Future
-                  plans (shortterm, midterm, longterm), priorities and
-                  bucketlist.
-                </li>
-              </ul>
-            </li>
             <li>
               TODO: Decide if there is needed any background image for this
               webpage to make this more personal
             </li>
-            <li>TODO: Link 'so far' with an in-page href to "Past 'Now's"</li>
           </ul>
         </p>
         <hr />
@@ -92,6 +69,81 @@ const Credits = () => {
                 rel="noreferrer"
               >
                 7da95a5
+              </a>
+            </li>
+            <li>
+              <s>Make tags clickable and filterable - 2021-05-29</s> -{" "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/37fed90"
+                target="_blank"
+                rel="noreferrer"
+              >
+                37fed90
+              </a>
+              {", "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/b5ba9eb"
+                target="_blank"
+                rel="noreferrer"
+              >
+                b5ba9eb
+              </a>
+            </li>
+            <li>
+              <s>Add photos preview / photo fixes - 2021-06-07</s> -{" "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/e5a9a81"
+                target="_blank"
+                rel="noreferrer"
+              >
+                e5a9a81
+              </a>
+              {", "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/31032d7"
+                target="_blank"
+                rel="noreferrer"
+              >
+                31032d7
+              </a>
+            </li>
+            <li>
+              <s>Start writing blog posts / remove dummy posts - 2021-05-29</s> -{" "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/37fed90"
+                target="_blank"
+                rel="noreferrer"
+              >
+                37fed90
+              </a>
+            </li>
+            <li>
+              <s>Serve books list / show upcoming books - 2021-09-26</s> -{" "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/294aae0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                294aae0
+              </a>
+            </li>
+            <li>
+              <s>Add "Past Now" navigation / dropdown affordance - 2021-05-20</s>
+              -{" "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/6a1f68c"
+                target="_blank"
+                rel="noreferrer"
+              >
+                6a1f68c
+              </a>
+              {", "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/90170ae"
+                target="_blank"
+                rel="noreferrer"
+              >
+                90170ae
               </a>
             </li>
             <li>
