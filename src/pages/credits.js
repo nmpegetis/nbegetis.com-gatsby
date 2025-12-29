@@ -2,126 +2,39 @@ import React from "react"
 import { PageTitle, PageLayout } from "../components"
 import { SEO } from "../utils"
 import Container from "react-bootstrap/Container"
-
-const Credits = () => {
-  return (
-    <PageLayout>
-      <SEO title="Credits" />
-      <PageTitle title="Credits" />
-      <Container className="text-left">
-        <p>Last updated on December 29, 2025</p>
-        <h3>Todo</h3>
-        <p>
-          <h5>Todo tasks for this personal page:</h5>
-          <ul
-            style={{
-              height: "15em",
-              "line-height": "2em",
-              overflow: "scroll",
-              "overflow-x": "hidden",
-            }}
-          >
             <li>
-              <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/19"
-                target="_blank"
-                rel="noreferrer"
-              >
-                #19: Accessibility: Form in navbar missing submit button (H32.2)
-              </a>
-              <small> · opened 2025-12-24</small>
+              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/9" target="_blank" rel="noreferrer">#9: Feature: Add i18n support to change webpage language by location</a>
+              <span style={{display:'inline-block', marginLeft:'0.5em'}}>
+                <span style={{display:'inline-block',background:'#a2eeef',color:'#000',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem'}}>enhancement</span>
+                <span style={{display:'inline-block',background:'#fff',color:'#444',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem',marginLeft:'0.4rem'}}>· opened 2025-12-15</span>
+              </span>
             </li>
-            <li>
-              <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/18"
-                target="_blank"
-                rel="noreferrer"
-              >
-                #18: Accessibility: Insufficient color contrast (multiple elements)
-              </a>
-              <small> · opened 2025-12-24</small>
+              <span style={{display: 'inline-block', marginLeft: '0.5em', fontSize: '0.8em', color:'#444'}}>· opened 2025-12-15</span>
             </li>
+              <span style={{display: 'inline-block', marginLeft: '0.5em', fontSize: '0.8em', color:'#444'}}>· opened 2025-12-24</span>
             <li>
-              <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/17"
-                target="_blank"
-                rel="noreferrer"
-              >
-                #17: Accessibility: Anchor elements missing accessible name (SVG-only anchors)
-              </a>
-              <small> · opened 2025-12-24</small>
+              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/7" target="_blank" rel="noreferrer">#7: Feature: Add photo preview/lightbox support for Projects and posts</a>
+              <span style={{display:'inline-block', marginLeft:'0.5em'}}>
+                <span style={{display:'inline-block',background:'#a2eeef',color:'#000',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem'}}>enhancement</span>
+                <span style={{display:'inline-block',background:'#fff',color:'#444',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem',marginLeft:'0.4rem'}}>· opened 2025-12-15</span>
+              </span>
             </li>
+              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/16" target="_blank" rel="noreferrer">#16: CI: Make Pa11y reliable (re-run with no-sandbox, verify reports)</a>
+              <span style={{display: 'inline-block', marginLeft: '0.5em', fontSize: '0.8em', color:'#444'}}>· opened 2025-12-24</span>
             <li>
-              <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/16"
-                target="_blank"
-                rel="noreferrer"
-              >
-                #16: CI: Make Pa11y reliable (re-run with no-sandbox, verify reports)
-              </a>
-              <small> · opened 2025-12-24</small>
+              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/6" target="_blank" rel="noreferrer">#6: Perf: optimize Now page GraphQL query to avoid fetching all 'now' texts</a>
+              <span style={{display:'inline-block', marginLeft:'0.5em'}}>
+                <span style={{display:'inline-block',background:'#a2eeef',color:'#000',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem'}}>enhancement</span>
+                <span style={{display:'inline-block',background:'#fff',color:'#444',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem',marginLeft:'0.4rem'}}>· opened 2025-12-15</span>
+              </span>
+            <li>
+              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/5" target="_blank" rel="noreferrer">#5: UX: Clean up Credits page and split remaining todos</a>
+              <span style={{display:'inline-block', marginLeft:'0.5em'}}>
+                <span style={{display:'inline-block',background:'#d73a4a',color:'#fff',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem'}}>bug</span>
+                <span style={{display:'inline-block',background:'#a2eeef',color:'#000',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem',marginLeft:'0.4rem'}}>enhancement</span>
+                <span style={{display:'inline-block',background:'#fff',color:'#444',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem',marginLeft:'0.4rem'}}>· opened 2025-12-15</span>
+              </span>
             </li>
-            <li>
-              <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/15"
-                target="_blank"
-                rel="noreferrer"
-              >
-                #15: Accessibility: Fix ARIA and accessible-name issues (Lighthouse reports)
-              </a>
-              <small> · opened 2025-12-24</small>
-            </li>
-            <li>
-              <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/14"
-                target="_blank"
-                rel="noreferrer"
-              >
-                #14: Performance: Reduce main-thread work / JS bundle size
-              </a>
-              <small> · opened 2025-12-24</small>
-            </li>
-            <li>
-              <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/13"
-                target="_blank"
-                rel="noreferrer"
-              >
-                #13: Bug: Browser errors logged to console during audits
-              </a>
-              <small> · opened 2025-12-24</small>
-            </li>
-            <li>
-              <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/12"
-                target="_blank"
-                rel="noreferrer"
-              >
-                #12: Performance: Reduce LCP (12.6s on CI)
-              </a>
-              <small> · opened 2025-12-24</small>
-            </li>
-            <li>
-              <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/11"
-                target="_blank"
-                rel="noreferrer"
-              >
-                #11: Content: Add content to Projects and Resume pages
-              </a>
-              <small> · opened 2025-12-15</small>
-            </li>
-            <li>
-              <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/10"
-                target="_blank"
-                rel="noreferrer"
-              >
-                #10: Feature: Add fitness (Strava/Garmin) integration for posts
-              </a>
-              <small> · opened 2025-12-15</small>
-            </li>
-            <li>
               <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/9"
                 target="_blank"
@@ -130,19 +43,20 @@ const Credits = () => {
                 #9: Feature: Add i18n support to change webpage language by location
               </a>
               <small> · opened 2025-12-15 · labels: enhancement</small>
+            <li>
+              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/4" target="_blank" rel="noreferrer">#4: Feature: Add tags UI and tag-based filtering across site</a>
+              <span style={{display:'inline-block', marginLeft:'0.5em'}}>
+                <span style={{display:'inline-block',background:'#a2eeef',color:'#000',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem'}}>enhancement</span>
+                <span style={{display:'inline-block',background:'#fff',color:'#444',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem',marginLeft:'0.4rem'}}>· opened 2025-12-15</span>
+              </span>
             </li>
             <li>
-              <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/8"
-                target="_blank"
-                rel="noreferrer"
-              >
-                #8: Feature: Add 'Future' page under 'Now' and dropdown menu item functionality
-              </a>
-              <small> · opened 2025-12-15</small>
+              <a href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/23" target="_blank" rel="noreferrer">#23: Feature: Add 'Book reviews' section under Blog</a>
+              <span style={{display:'inline-block', marginLeft:'0.5em'}}>
+                <span style={{display:'inline-block',background:'#a2eeef',color:'#000',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem'}}>enhancement</span>
+                <span style={{display:'inline-block',background:'#fff',color:'#444',padding:'0.08rem 0.4rem',borderRadius:'0.3rem',fontSize:'0.75rem',marginLeft:'0.4rem'}}>· opened 2025-12-29</span>
+              </span>
             </li>
-            <li>
-              <a
                 href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/7"
                 target="_blank"
                 rel="noreferrer"
