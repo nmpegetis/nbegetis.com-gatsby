@@ -7,44 +7,21 @@
 <p>Generated from <code>artifacts/lighthouse.json</code></p>
 <h2>Category scores</h2>
 <table><thead><tr><th>Category</th><th>Score</th></tr></thead><tbody>
-<tr><td>performance</td><td>51%</td></tr>
-<tr><td>accessibility</td><td>88%</td></tr>
-<tr><td>best-practices</td><td>96%</td></tr>
-<tr><td>seo</td><td>100%</td></tr>
+<tr><td>performance</td><td>n/a</td></tr>
+<tr><td>accessibility</td><td>n/a</td></tr>
+<tr><td>best-practices</td><td>n/a</td></tr>
+<tr><td>seo</td><td>n/a</td></tr>
 </tbody></table>
 <h2>Core metrics</h2>
 <table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody>
-<tr><td>First Contentful Paint</td><td>4.2 s</td></tr>
-<tr><td>Largest Contentful Paint</td><td>12.6 s</td></tr>
-<tr><td>Total Blocking Time</td><td>510 ms</td></tr>
-<tr><td>Cumulative Layout Shift</td><td>0</td></tr>
-<tr><td>Speed Index</td><td>4.9 s</td></tr>
-<tr><td>Time to Interactive</td><td>12.7 s</td></tr>
+<tr><td>First Contentful Paint</td><td>n/a</td></tr>
+<tr><td>Largest Contentful Paint</td><td>n/a</td></tr>
+<tr><td>Total Blocking Time</td><td>n/a</td></tr>
+<tr><td>Cumulative Layout Shift</td><td>n/a</td></tr>
+<tr><td>Speed Index</td><td>n/a</td></tr>
+<tr><td>Time to Interactive</td><td>n/a</td></tr>
 </tbody></table>
 <h2>Failing audits (score < 0.9)</h2>
-<table><thead><tr><th>Audit</th><th>Score</th><th>Value</th><th>Description</th></tr></thead><tbody>
-<tr><td>Largest Contentful Paint</td><td>0%</td><td>12.6 s</td><td>Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)</td></tr>
-<tr><td>Browser errors were logged to the console</td><td>0%</td><td></td><td>Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)</td></tr>
-<tr><td>Minimize main-thread work</td><td>0%</td><td>2.6 s</td><td>Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)</td></tr>
-<tr><td>Largest Contentful Paint element</td><td>0%</td><td>12,600 ms</td><td>This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)</td></tr>
-<tr><td>Background and foreground colors do not have a sufficient contrast ratio.</td><td>0%</td><td></td><td>Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).</td></tr>
-<tr><td>Heading elements are not in a sequentially-descending order</td><td>0%</td><td></td><td>Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.10/heading-order).</td></tr>
-<tr><td>Links do not have a discernible name</td><td>0%</td><td></td><td>Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.10/link-name).</td></tr>
-<tr><td>Eliminate render-blocking resources</td><td>0%</td><td>Est savings of 450 ms</td><td>Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).</td></tr>
-<tr><td>Reduce unused JavaScript</td><td>0%</td><td>Est savings of 144 KiB</td><td>Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).</td></tr>
-<tr><td>Enable text compression</td><td>0%</td><td>Est savings of 1,350 KiB</td><td>Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more about text compression](https://developer.chrome.com/docs/lighthouse/performance/uses-text-compression/).</td></tr>
-<tr><td>Use efficient cache lifetimes</td><td>0%</td><td>Est savings of 1,392 KiB</td><td>A long cache lifetime can speed up repeat visits to your page. [Learn more](https://web.dev/uses-long-cache-ttl/).</td></tr>
-<tr><td>Network dependency tree</td><td>0%</td><td></td><td>[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.</td></tr>
-<tr><td>Render blocking requests</td><td>0%</td><td>Est savings of 450 ms</td><td>Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.</td></tr>
-<tr><td>Time to Interactive</td><td>14%</td><td>12.7 s</td><td>Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).</td></tr>
-<tr><td>Max Potential First Input Delay</td><td>16%</td><td>410 ms</td><td>The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).</td></tr>
-<tr><td>First Contentful Paint</td><td>20%</td><td>4.2 s</td><td>First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).</td></tr>
-<tr><td>Serve static assets with an efficient cache policy</td><td>50%</td><td>8 resources found</td><td>A long cache lifetime can speed up repeat visits to your page. [Learn more about efficient cache policies](https://developer.chrome.com/docs/lighthouse/performance/uses-long-cache-ttl/).</td></tr>
-<tr><td>Reduce unused CSS</td><td>50%</td><td>Est savings of 214 KiB</td><td>Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).</td></tr>
-<tr><td>Avoid serving legacy JavaScript to modern browsers</td><td>50%</td><td>Est savings of 4 KiB</td><td>Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)</td></tr>
-<tr><td>Document request latency</td><td>50%</td><td>Est savings of 158 KiB</td><td>Your first network request is the most important.  Reduce its latency by avoiding redirects, ensuring a fast server response, and enabling text compression.</td></tr>
-<tr><td>Total Blocking Time</td><td>57%</td><td>510 ms</td><td>Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).</td></tr>
-<tr><td>Speed Index</td><td>65%</td><td>4.9 s</td><td>Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).</td></tr>
-</tbody></table>
+<p>No failing audits found.</p>
 <p>Full JSON available at <code>artifacts/lighthouse.json</code></p>
 </body></html>
