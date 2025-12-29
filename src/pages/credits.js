@@ -27,7 +27,6 @@ const Credits = () => {
             <li>TODO: Make tags in whole web base clickable, and filterable</li>
             <li>TODO: Add plugin for photos preview</li>
             <li>TODO: Add tags in blog post cards and pages</li>
-            <li>TODO: Add content in Projects</li>
             <li>TODO: Add content in Resume</li>
             <li>
               TODO: Serve books reading list etc. from graphql. Show top # books
@@ -69,16 +68,30 @@ const Credits = () => {
           >
             <li>
               <s>
-                Fix image shown for each blog-post filtering only the ones
-                within directory - 20210607
-              </s>{" "}
-              -{" "}
+                Add content in Projects - 2025-12-29
+              </s>{" "}-{" "}
               <a
-                href="https://github.com/nmpegetis/nbegetis.com-gatsby/"
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/cae6e2b"
                 target="_blank"
                 rel="noreferrer"
               >
-                latest
+                cae6e2b
+              </a>
+              {", "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/07907d9"
+                target="_blank"
+                rel="noreferrer"
+              >
+                07907d9
+              </a>
+              {", "}
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/commit/7da95a5"
+                target="_blank"
+                rel="noreferrer"
+              >
+                7da95a5
               </a>
             </li>
             <li>
