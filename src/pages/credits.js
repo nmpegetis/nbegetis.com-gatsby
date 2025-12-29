@@ -9,7 +9,7 @@ const Credits = () => {
       <SEO title="Credits" />
       <PageTitle title="Credits" />
       <Container className="text-left">
-        <p>Last updated on May 26, 2021</p>
+        <p>Last updated on December 29, 2025</p>
         <h3>Todo</h3>
         <p>
           <h5>Todo tasks for this personal page:</h5>
@@ -21,13 +21,149 @@ const Credits = () => {
               "overflow-x": "hidden",
             }}
           >
-            <li>TODO: Fix code in this Credits page with UX principles</li>
-            <li>TODO: Add content in Resume</li>
-            <li>TODO: Change wepbage language based on location</li>
-            <li>TODO: Add strava plugins or garmin to use within blog posts</li>
             <li>
-              TODO: Decide if there is needed any background image for this
-              webpage to make this more personal
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/19"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #19: Accessibility: Form in navbar missing submit button (H32.2)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/18"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #18: Accessibility: Insufficient color contrast (multiple elements)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/17"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #17: Accessibility: Anchor elements missing accessible name (SVG-only anchors)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/16"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #16: CI: Make Pa11y reliable (re-run with no-sandbox, verify reports)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/15"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #15: Accessibility: Fix ARIA and accessible-name issues (Lighthouse reports)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/14"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #14: Performance: Reduce main-thread work / JS bundle size
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/13"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #13: Bug: Browser errors logged to console during audits
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/12"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #12: Performance: Reduce LCP (12.6s on CI)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/11"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #11: Content: Add content to Projects and Resume pages
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/10"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #10: Feature: Add fitness (Strava/Garmin) integration for posts
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/9"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #9: Feature: Add i18n support to change webpage language by location
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/8"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #8: Feature: Add 'Future' page under 'Now' and dropdown menu item functionality
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/7"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #7: Feature: Add photo preview/lightbox support for Projects and posts
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/6"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #6: Perf: optimize Now page GraphQL query to avoid fetching all 'now' texts
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/5"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #5: UX: Clean up Credits page and split remaining todos
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmpegetis/nbegetis.com-gatsby/issues/4"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #4: Feature: Add tags UI and tag-based filtering across site
+              </a>
             </li>
           </ul>
         </p>
@@ -239,16 +375,13 @@ const Credits = () => {
         </p>
         <h3>License</h3>
         <p>This site’s simple license: </p>
-        <code>
-          <p>Copyright Nikolas Begetis, 2021</p>
-          <p>
-            You may copy the code of this site, and be inspired by its
-            structure.
-          </p>
-          <p>
-            You may not copy any content of mine and claim them as your own.
-          </p>
-        </code>
+        <p>
+          You may copy the code of this site, and be inspired by its
+          structure.
+        </p>
+        <p>
+          You may not copy any content of mine and claim them as your own.
+        </p>
         <p></p>
       </Container>
     </PageLayout>
