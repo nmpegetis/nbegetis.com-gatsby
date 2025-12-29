@@ -3,6 +3,9 @@ title: "PWA-Restaurant-Reviews"
 date: 2019-01-27
 tags: []
 repo: https://github.com/nmpegetis/PWA-Restaurant-Reviews
+stars: 0
+language: "JavaScript"
+lastUpdated: 2019-01-27
 ---
 
 Mid2018: A Progressive Web Application for Restaurant Reviews. Took Starter Code for the Udacity's "Mobile Web Specialist Restaurant Reviews App: Stage 1" Project. I'm Nikolas from Athens, Greece. Please add me in LinkedIn and endorse me for my relevant experience: https://www.linkedin.com/in/nmpegetis/. (Duration = 2 months)

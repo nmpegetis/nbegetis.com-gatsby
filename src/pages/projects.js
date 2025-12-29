@@ -14,7 +14,7 @@ const ProjectsPage = ({ data }) => {
     <PageLayout>
       <SEO title="Projects" />
       <PageTitle title="Projects (**dummy data, to be updated**)" />
-      <Container className="text-left">
+      <Container className="text-start">
         <section>
           {allProjects.map(({ node }) => (
             <div key={node.id} className="p-3">

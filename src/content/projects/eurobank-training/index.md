@@ -3,6 +3,9 @@ title: "eurobank-training"
 date: 2019-06-15
 tags: []
 repo: https://github.com/nmpegetis/eurobank-training
+stars: 0
+language: "JavaScript"
+lastUpdated: 2019-06-15
 ---
 
 Mid2019: My Training Tutorial Guide created for the company I work for, that provides step-by-step material to trainees and elegantly stops for explaining the most important concepts of creating a React Application, using also in the end a glimpse of Redux store. I'm Nikolas from Athens, Greece. Please add me in LinkedIn and endorse me for my relevant experience: https://www.linkedin.com/in/nmpegetis/. (Duration = 1 week)

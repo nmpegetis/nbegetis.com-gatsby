@@ -5,7 +5,7 @@ import { Container, Badge, Col, Row } from "react-bootstrap"
 
 const ProjectLink = ({ excerpt, featuredImages, tags = [], title, to }) => {
   return (
-    <Container className="text-center">
+    <Container className="text-start">
       <Link to={to} style={{ textDecoration: "none" }}>
         <Row>
           {featuredImages &&
@@ -14,7 +14,7 @@ const ProjectLink = ({ excerpt, featuredImages, tags = [], title, to }) => {
                 <GatsbyImage
                   image={getImage(image)}
                   alt={title}
-                  className="m-auto w-75"
+                  className="w-75"
                 />
               </Col>
             ))}
