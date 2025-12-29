@@ -3,7 +3,8 @@ import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Container, Badge, Col, Row } from "react-bootstrap"
 
-const ProjectLink = ({ excerpt, featuredImages, tags = [], title, to }) => {
+const ProjectLink = ({ excerpt, featuredImages, tags, title, to }) => {
+  const list = tags || []
   return (
     <Container className="text-start">
       <Link to={to} style={{ textDecoration: "none" }}>
@@ -21,7 +22,7 @@ const ProjectLink = ({ excerpt, featuredImages, tags = [], title, to }) => {
         </Row>
         <h2 className="mt-5">{title}</h2>
       </Link>
-      {tags.map(tag => (
+      {list.map(tag => (
         <Badge key={tag} pill variant="dark" className="px-2 mr-1">
           {tag}
         </Badge>
