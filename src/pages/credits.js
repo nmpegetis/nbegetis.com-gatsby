@@ -29,6 +29,7 @@ const Credits = () => {
               >
                 #19: Accessibility: Form in navbar missing submit button (H32.2)
               </a>
+              <small> · opened 2025-12-24</small>
             </li>
             <li>
               <a
@@ -38,6 +39,7 @@ const Credits = () => {
               >
                 #18: Accessibility: Insufficient color contrast (multiple elements)
               </a>
+              <small> · opened 2025-12-24</small>
             </li>
             <li>
               <a
@@ -47,6 +49,7 @@ const Credits = () => {
               >
                 #17: Accessibility: Anchor elements missing accessible name (SVG-only anchors)
               </a>
+              <small> · opened 2025-12-24</small>
             </li>
             <li>
               <a
@@ -56,6 +59,7 @@ const Credits = () => {
               >
                 #16: CI: Make Pa11y reliable (re-run with no-sandbox, verify reports)
               </a>
+              <small> · opened 2025-12-24</small>
             </li>
             <li>
               <a
@@ -65,6 +69,7 @@ const Credits = () => {
               >
                 #15: Accessibility: Fix ARIA and accessible-name issues (Lighthouse reports)
               </a>
+              <small> · opened 2025-12-24</small>
             </li>
             <li>
               <a
@@ -74,6 +79,7 @@ const Credits = () => {
               >
                 #14: Performance: Reduce main-thread work / JS bundle size
               </a>
+              <small> · opened 2025-12-24</small>
             </li>
             <li>
               <a
@@ -83,6 +89,7 @@ const Credits = () => {
               >
                 #13: Bug: Browser errors logged to console during audits
               </a>
+              <small> · opened 2025-12-24</small>
             </li>
             <li>
               <a
@@ -92,6 +99,7 @@ const Credits = () => {
               >
                 #12: Performance: Reduce LCP (12.6s on CI)
               </a>
+              <small> · opened 2025-12-24</small>
             </li>
             <li>
               <a
@@ -101,6 +109,7 @@ const Credits = () => {
               >
                 #11: Content: Add content to Projects and Resume pages
               </a>
+              <small> · opened 2025-12-15</small>
             </li>
             <li>
               <a
@@ -110,6 +119,7 @@ const Credits = () => {
               >
                 #10: Feature: Add fitness (Strava/Garmin) integration for posts
               </a>
+              <small> · opened 2025-12-15</small>
             </li>
             <li>
               <a
@@ -119,6 +129,7 @@ const Credits = () => {
               >
                 #9: Feature: Add i18n support to change webpage language by location
               </a>
+              <small> · opened 2025-12-15 · labels: enhancement</small>
             </li>
             <li>
               <a
@@ -128,6 +139,7 @@ const Credits = () => {
               >
                 #8: Feature: Add 'Future' page under 'Now' and dropdown menu item functionality
               </a>
+              <small> · opened 2025-12-15</small>
             </li>
             <li>
               <a
@@ -137,6 +149,7 @@ const Credits = () => {
               >
                 #7: Feature: Add photo preview/lightbox support for Projects and posts
               </a>
+              <small> · opened 2025-12-15 · labels: enhancement</small>
             </li>
             <li>
               <a
@@ -146,6 +159,7 @@ const Credits = () => {
               >
                 #6: Perf: optimize Now page GraphQL query to avoid fetching all 'now' texts
               </a>
+              <small> · opened 2025-12-15 · labels: enhancement</small>
             </li>
             <li>
               <a
@@ -155,6 +169,7 @@ const Credits = () => {
               >
                 #5: UX: Clean up Credits page and split remaining todos
               </a>
+              <small> · opened 2025-12-15 · labels: bug, enhancement</small>
             </li>
             <li>
               <a
@@ -164,6 +179,7 @@ const Credits = () => {
               >
                 #4: Feature: Add tags UI and tag-based filtering across site
               </a>
+              <small> · opened 2025-12-15 · labels: enhancement</small>
             </li>
           </ul>
         </p>
