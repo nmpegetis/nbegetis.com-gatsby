@@ -109,31 +109,31 @@ body {
 }
 
 .red {
-  color: $faded-red;
+  color: #ee0303; /* stronger red for contrast */
 }
 
 .blue {
-  color: $dark-blue;
+  color: #0077d9; /* improved contrast */
 }
 
 .light-blue {
-  color: $dark-blue;
+  color: #0077d9; /* improved contrast */
 }
 
 .yellow {
-  color: orange;
+  color: #a16c00; /* darker yellow for contrast */
 }
 
 .light-yellow {
-  color: $yellow;
+  color: #a16c00; /* darker yellow for contrast */
 }
 
 .green {
-  color: $green;  
+  color: #4c840b; /* improved contrast */
 }
 
 .white {
-  color: plum;
+  color: #767676; /* avoid low-contrast 'plum' on light bg */
 }
 
 p {

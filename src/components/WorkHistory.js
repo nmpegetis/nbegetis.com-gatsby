@@ -6,18 +6,17 @@ const CompanyCard = ({ frontmatter, image }) => {
   const { company, position, startDate, endDate, location } = frontmatter
   const img = Array.isArray(image) ? image[0] : image
   return (
-    <Container fluid className="m-auto work-history">
+    <Container fluid className="work-history">
       {img && (
         <div style={{ maxHeight: "15vmax", maxWidth: "15vmax" }}>
           <GatsbyImage
             image={getImage(img)}
             alt={company}
-            className="m-auto"
           />
         </div>
       )}
       <div className="md-font">
-        <h2 className="m-auto pt-2">{company}</h2>
+        <h2 className="pt-2">{company}</h2>
         <h5 className="text-muted">{location}</h5>
         <h4 className="mt-2">{position}</h4>
         <h5 className="text-muted mt-2">
@@ -30,7 +29,7 @@ const CompanyCard = ({ frontmatter, image }) => {
 
 const WorkHistory = ({ html, frontmatter = {}, image }) => {
   return (
-    <Container className="p-1 project-link text-center">
+    <Container className="p-1 project-link text-start">
       <Row>
         <Col className="col-md-4 col-12">
           <CompanyCard frontmatter={frontmatter} image={image} />

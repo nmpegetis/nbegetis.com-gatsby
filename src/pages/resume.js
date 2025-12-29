@@ -14,7 +14,7 @@ const ResumePage = ({ data }) => {
       <SEO title="Resume" />
       <PageTitle title="Resume (**dummy data, to be updated**)">
         &nbsp;
-        <a href="../../resume.pdf" target="_blank" download>
+        <a href="../../resume.pdf" target="_blank" download aria-label="Resume (PDF, opens in new tab)">
           <FontAwesomeIcon
             style={{ fontSize: "2rem" }}
             icon={["fas", "file-download"]}

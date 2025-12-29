@@ -33,8 +33,8 @@ const AboutPage = ({ data }) => {
           src={dark ? `../../icons/p.png` : `../../icons/p.png`}
           alt={author}
         />
-        <article className="w-175 m-auto pt-2 text-justify">
-          <p className="text-center">
+        <article className="w-175 mx-0 pt-2 text-justify">
+          <p className="text-start">
             Some of the designations I listen to are (refresh for more):
             {shuffleArray(designations).map(
               (attr, i) =>
@@ -135,7 +135,7 @@ const AboutPage = ({ data }) => {
             about anything. 👋
           </p>
         </article>
-        <article className="w-75 m-auto">
+        <article className="w-75 mx-0">
           {unemployed && (
             <>
               <hr />
